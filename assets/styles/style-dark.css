@@ -7,8 +7,15 @@
     --primary-color-soft: #ff994e33;
     --background-color: #272333;
     --text-color: #DEDDE0;
-    --box-background-color: #5d5577;
+    --box-background-color: #615a79;
+    --tab-background-color: #302C40;
     --white: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-container {
+        background: rgba(48, 43, 64, 0.75);
+    }
 }
 
 .input,
@@ -167,7 +174,7 @@ select option,
     - Sections
 ----------------------------------------------------------------- */
 .box {
-    background-color: #302C40;
+    background-color: var(--tab-background-color);
 }
 
 .box__second {
