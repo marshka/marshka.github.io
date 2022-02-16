@@ -40,11 +40,24 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css" id="dark-theme" disabled>
+
+    <script type="text/javascript">
+    const darkTheme = document.querySelector("#dark-theme");
+    var currentTheme = localStorage.getItem("theme");
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    if (currentTheme == null) {
+        currentTheme = prefersDarkScheme.matches ? 'dark' : 'light';
+    }
+
+    darkTheme.disabled = currentTheme == "dark" ? false : true;
+    localStorage.setItem("theme", currentTheme);
+    </script>
 </head>
 
 <body>
     <!-- Preloader -->
-    <div class="preloader">
+    <!--div class="preloader">
         <div class="preloader__wrap">
             <div class="circle-pulse">
                 <div class="circle-pulse__1"></div>
@@ -52,7 +65,7 @@
             </div>
             <div class="preloader__progress"><span></span></div>
         </div>
-    </div>
+    </div-->
     <main class="main">
         <div class="container gutter-top">
             <div class="row sticky-parent">
@@ -769,17 +782,6 @@
     <!-- JavaScripts -->
     <script type="text/javascript">
     const togglers = document.getElementsByClassName("toggle-dark-mode");
-    const darkTheme = document.querySelector("#dark-theme");
-    var currentTheme = localStorage.getItem("theme");
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-    if (currentTheme == null) {
-        currentTheme = prefersDarkScheme.matches ? 'dark' : 'light';
-    }
-
-    darkTheme.disabled = currentTheme == "dark" ? false : true;
-    localStorage.setItem("theme", currentTheme);
-
     [].forEach.call(togglers, btn => btn.addEventListener("click", function() {
         darkTheme.disabled = !darkTheme.disabled;
         localStorage.setItem("theme", darkTheme.disabled ? 'light' : 'dark');
