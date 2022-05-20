@@ -1627,6 +1627,12 @@ img.case-item__icon {
     font-size: 0.9em;
 }
 
+@media only screen and (max-width: 580px) {
+    .case-item__links {
+        justify-content: center;
+    }
+}
+
 .case-item__links a {
     margin-right: 1.2em;
 }
