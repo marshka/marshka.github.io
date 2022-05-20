@@ -179,6 +179,7 @@ select option,
 
 .box__second {
     background-color: #2C283A;
+    box-shadow: unset;
 }
 
 .box-inner {
@@ -196,18 +197,6 @@ select option,
 
 .shadow::before {
     box-shadow: 0px 40px 50px rgba(32, 29, 42, 0.75);
-}
-
-.avatar--180 {
-    filter: drop-shadow(0px 24px 24px rgba(32, 29, 42, 0.7));
-}
-
-.avatar--80 {
-    filter: drop-shadow(0px 8px 24px rgba(32, 29, 42, 0.75)) drop-shadow(0px 4px 4px rgba(32, 29, 42, 0.75));
-}
-
-.avatar--60 {
-    filter: drop-shadow(0px 8px 24px rgba(32, 29, 42, 0.75)) drop-shadow(0px 4px 4px rgba(32, 29, 42, 0.75));
 }
 
 .social__link {

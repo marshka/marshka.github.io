@@ -60,7 +60,7 @@ body {
     }
 
     main {
-        margin-bottom: 3rem;
+        margin-bottom: 3.5rem;
     }
 }
 
@@ -100,6 +100,19 @@ html.is-scroll-disabled body {
 .text-icon {
     width: 1em;
     height: 1em;
+}
+
+.rotate-icon-45,
+.rotate-icon-180 {
+    transition: ease 0.2s;
+}
+
+.is-open .rotate-icon-45 {
+    transform: rotate(45deg);
+}
+
+.is-open .rotate-icon-180 {
+    transform: rotate(180deg);
 }
 
 /* -----------------------------------------------------------------
@@ -330,12 +343,12 @@ iframe {
 
 ::-moz-selection {
     background: var(--primary-color);
-    color: var(--text-color-on-primary)!important;
+    color: var(--text-color-on-primary) !important;
 }
 
 ::selection {
     background: var(--primary-color);
-    color: var(--text-color-on-primary)!important;
+    color: var(--text-color-on-primary) !important;
 }
 
 /* -----------------------------------------------------------------
@@ -876,7 +889,7 @@ button:focus {
     margin-bottom: 1.5625rem;
     margin-left: auto;
     margin-right: auto;
-    transition: all .3s ease-in-out;
+    transition: margin-top .3s ease-in-out;
 }
 
 .sidebar__user-name {
@@ -1043,6 +1056,7 @@ button:focus {
 
 .box__second {
     background-color: var(--tab-background-color);
+    box-shadow: 0 0 10px #92929238;
     border-radius: 15.3846153846px;
 }
 
@@ -1284,7 +1298,9 @@ button:focus {
 }
 
 .avatar--180 {
-    border-radius: 3rem;
+    /*border-radius: 3rem;*/
+    border-radius: 50%;
+    background-color: var(--background-color);
     max-height: 11.25rem;
     max-width: 11.25rem;
     height: 11.25rem;
@@ -1338,7 +1354,7 @@ button:focus {
 .social__link {
     color: var(--text-color);
     display: inline-block;
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     margin-left: 0.8125rem;
     text-decoration: none;
 }
@@ -1421,7 +1437,7 @@ button:focus {
 
 @media only screen and (max-width: 580px) {
     .nav-container {
-        border-radius: 12px 12px 0 0;
+        border-radius: 20px 20px 0 0;
         height: 3rem;
         padding-right: 1rem;
         padding-left: 1rem;
@@ -1517,7 +1533,8 @@ button:focus {
     - Footer
 ----------------------------------------------------------------- */
 .footer {
-    color: var(--text-color-light);
+    color: var(--text-color);
+    opacity: 0.5;
     font-size: 0.875rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -1598,10 +1615,28 @@ img.case-item__icon {
 .case-item__caption {
     opacity: 0.8;
     line-height: 1.5;
+    margin-bottom: 0.5em;
 }
 
 .case-item__caption:last-child {
     margin-bottom: 0;
+}
+
+.case-item__links {
+    display: flex;
+    font-size: 0.9em;
+}
+
+.case-item__links a {
+    margin-right: 1.2em;
+}
+
+.case-item__links a:last-child {
+    margin-right: 0;
+}
+
+.case-item__links .text-icon {
+    margin-right: 0.4em;
 }
 
 /* -----------------------------------------------------------------
@@ -1613,6 +1648,7 @@ img.case-item__icon {
 
 .gallery-grid {
     display: flex;
+    position: relative;
 }
 
 .gallery-grid>* {
@@ -1621,6 +1657,7 @@ img.case-item__icon {
 
 .gallery-grid__item {
     margin-bottom: 1.3125rem;
+    position: absolute;
     width: calc(33% - 17.5px);
 }
 
@@ -1678,6 +1715,7 @@ img.case-item__icon {
 
 .gallery-grid__image-wrap::after {
     /*content: url(#marshkicon-view);*/
+    content: "📃";
     background: rgba(32, 32, 33, 0.8);
     -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
@@ -1774,11 +1812,11 @@ img.case-item__icon {
     line-height: 0.5em;
     background: var(--primary-color);
     color: var(--text-color-on-primary);
-    opacity:  0.95;
+    opacity: 0.95;
     font-size: 0.6em;
     font-weight: 700;
     z-index: 10;
-    padding: 8px; 
+    padding: 8px;
     border-top-right-radius: 14px;
     border-bottom-left-radius: 8px;
 }
@@ -1848,10 +1886,12 @@ img.case-item__icon {
 
     .select .placeholder {
         cursor: pointer;
-        display: block;
         padding: 0.5rem 0;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .select .placeholder:after {
@@ -1928,7 +1968,7 @@ img.case-item__icon {
 }
 
 .timeline__item {
-    border-left-color: var(--white);
+    border-left-color: var(--primary-color-soft);
     border-left-width: 1px;
     border-left-style: solid;
     padding-bottom: 0.5625rem;

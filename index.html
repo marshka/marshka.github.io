@@ -40,7 +40,6 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/styles/style-dark.css" id="dark-theme" disabled>
-
     <script type="text/javascript">
     const darkTheme = document.querySelector("#dark-theme");
     var currentTheme = localStorage.getItem("theme");
@@ -74,7 +73,7 @@
                     <div class="sidebar box shadow pb-0 sticky-column">
                         <svg class="avatar avatar--180" viewBox="0 0 188 188">
                             <g class="avatar__box">
-                                <image xlink:href="assets/img/face_thumb.jpg" height="100%" width="100%" />
+                                <image xlink:href="assets/img/face_thumb_nobg.png" height="100%" width="100%" />
                             </g>
                         </svg>
                         <div class="text-center">
@@ -149,7 +148,7 @@
                                                     <use href="#marshkicon-sensor-network" /></svg>
                                                 <div>
                                                     <h3 class="title title--h5">Spatio-temporal data processing</h3>
-                                                    <p class="case-item__caption">I mainly study problems on multivariate time series, like sensor network streams.</p>
+                                                    <p class="case-item__caption">My studies focus on analysis of multivariate time series, like sensor network streams.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -192,17 +191,24 @@
                                 <div class="box-inner box-inner--white box-inner--rounded">
                                     <h2 class="title title--h3">Open Source Projects</h2>
                                     <p>I strongly believe in the worldwide accessibility of science. As such, I try to make the software I develop for my research publicly available through <a href="https://github.com/marshka" target="_blank" rel="noopener noreferrer">my GitHub page</a>. You can also find the code related to my <a href="publications.html">publications</a> on the <a href="https://github.com/Graph-Machine-Learning-Group" target="_blank" rel="noopener noreferrer">GitHub page of Graph Machine Learning Group</a>.</p>
+                                    <p>We recently released a library on Spatiotemporal Graph Neural Networks!</p>
+                                    <!-- img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/TorchSpatiotemporal/tsl?style=social" -->
                                     <div class="row">
                                         <!-- TSL -->
-                                        <!-- div class="col-12">
+                                        <div class="col-12">
                                             <div class="case-item box box__second">
-                                                <img class="case-item__icon" src="assets/icons/icon-dev.svg" alt="" />
+                                                <img class="case-item__icon" style="width: 4rem; height: 4rem;" src="assets/img/tsl.svg" alt="" />
                                                 <div>
-                                                    <h3 class="title title--h5">TSL</h3>
-                                                    <p class="case-item__caption">TimeSeries Library is a library built upon <a href="https://pytorch.org/">PyTorch</a> and <a href="https://github.com/pyg-team/pytorch_geometric/">PyG</a> for processing of multivariate and multidimensional time series, like sensor networks, in a deep learning fashion.</p>
+                                                    <h3 class="title title--h5"><a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank">Torch Spatiotemporal</a></h3>
+                                                    <p class="case-item__caption">Torch Spatiotemporal (<strong>TSL</strong>) is a library built upon <a href="https://pytorch.org/">PyTorch</a> and <a href="https://github.com/pyg-team/pytorch_geometric/">PyG</a> for neural spatiotemporal data processing, with a focus on Graph Neural Networks.</p>
+                                                    <div class="case-item__links">
+                                                    <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank"><svg class="marshkicon text-icon">
+                                                            <use href="#marshkicon-github" /></svg>GitHub</a>
+                                                    <a href="https://torch-spatiotemporal.readthedocs.io/en/latest/" target="_blank"><svg class="marshkicon text-icon">
+                                                            <use href="#marshkicon-newspaper" /></svg>Documentation</a></div>
                                                 </div>
                                             </div>
-                                        </div-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
