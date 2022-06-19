@@ -1,0 +1,10 @@
+<div class="nav-container">
+    <ul class="nav">
+        {% assign mypages = site.pages | sort: "order" %}
+        {% for item in mypages %}
+        <li class="nav__item"><a href="{{ item.url | absolute_url }}" class="{% if item.url == page.url %}active{% endif %}">{{ item.title }}</a></li>
+        {% endfor %}
+        <li class="nav__item"><a class="toggle-dark-mode"><svg class="marshkicon text-icon">
+                    <use href="#marshkicon-night-mode" /></svg></a></li>
+    </ul>
+</div>
