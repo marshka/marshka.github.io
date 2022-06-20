@@ -1,7 +1,6 @@
 ---
 title: Publications
 layout: page
-order: 3
 ---
 
 <!-- PUBLICATIONS -->
@@ -26,15 +25,16 @@ order: 3
             <div class="gutter-sizer"></div>
             <!-- Publications cards -->
 
-            {% for pub in site.data.publications %}
+            {% assign publications = site.publications | sort: "order" | reverse %}
+            {% for pub in publications %}
             <div class="gallery-grid__item {% for cat in pub.categories %}category-{{cat}}{% endfor %}">
-                <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">
+                <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer">
                     <div class="gallery-grid__image-wrap">
                         <img class="gallery-grid__image cover lazyload" src="assets/img/{{ pub.thumbnail }}" alt="" />
                     </div>
                 </a>
                 <figcaption class="gallery-grid__caption">
-                    <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer">
+                    <a href="{{ pub.url }}">
                         <h4 class="title gallery-grid__title">{{ pub.title }}</h4>
                     </a>
                     <span class="gallery-grid__category">

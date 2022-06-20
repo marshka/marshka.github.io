@@ -1,0 +1,43 @@
+education:
+  - where: "Università della Svizzera italiana"
+    what: "Ph.D. student"
+    url: "https://www.usi.ch"
+    start: 2020
+    end: "ongoing"
+    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of prof. Cesare Alippi."
+  - where: "Politecnico di Milano"
+    what: "MSc"
+    url: "https://www.polimi.it/en/"
+    start: 2017
+    end: 2020
+    description: "I obtained a master’s degree with honors in Computer Science and Engineering at Politecnico di Milano, defending a thesis on machine learning. During the two years of studies, I mostly attended AI-oriented courses."
+  - where: "Universitat Politècnica de València"
+    url: "http://www.upv.es/en"
+    start: "Sep 2018"
+    end: "Jan 2019"
+    description: "During the semester spent abroad within the Erasmus program at the School of Informatics of the Polytechnic University of Valencia, I attended Spanish and English courses on programming, robotics and artificial intelligence."
+  - where: "Politecnico di Milano"
+    what: "BSc"
+    url: "https://www.polimi.it/en/"
+    start: 2014
+    end: 2017
+    description: "I obtained a bachelor’s degree in Engineering of Computing Systems at Politecnico di Milano. The course covered general topics of engineering and computer science."
+  - where: "Liceo C. Caminiti"
+    start: 2009
+    end: 2014
+    description: "I obtained a high school diploma with a specific focus in mathematics and science at the Liceo Scientifico Caminiti in Santa Teresa di Riva (ME, Sicilian Kingdom)."
+teaching:
+  - course: "Graph Deep Learning"
+    class: "MSc"
+    url: "https://search.usi.ch/corsi/35263629/graph-deep-learning"
+    where: "USI"
+    start: "Feb 2022" 
+    end: "Jun 2022"
+    description: "I co-delivered a lesson on Spatiotemporal Graph Neural Networks and tutored students on GDL projects."
+  - course: "Machine Learning"
+    class: "BSc"
+    url: "https://search.usi.ch/corsi/35262279/machine-learning"
+    where: "USI"
+    start: "Feb 2021" 
+    end: "Jun 2021"
+    description: '<a href="https://github.com/marshka/ml-20-21" target="_blank" rel="noopener noreferrer">Lab sessions</a> on practical aspects and show how to design machine learning solutions to real-world problems.'

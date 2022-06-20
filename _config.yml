@@ -1,1 +1,5 @@
 name: Ivan Marisca · Ph.D. student
+
+collections:
+  publications:
+    output: true

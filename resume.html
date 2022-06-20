@@ -1,7 +1,6 @@
 ---
 title: Resume
 layout: page
-order: 2
 ---
 
 <!-- RESUME -->
@@ -17,36 +16,16 @@ order: 2
                     <svg class="marshkicon title-icon">
                         <use href="#marshkicon-academic-cap" /></svg>Education</h2>
                 <div class="timeline">
-                    <!-- Item -->
+
+                    {% for item in site.data.resume.education %}
                     <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title"><a href="https://www.usi.ch" target="_blank" rel="noopener noreferrer">Università della Svizzera italiana</a> - Ph.D. student</h5>
-                        <span class="timeline__period">2020 — ongoing</span>
-                        <p class="timeline__description">Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of prof. Cesare Alippi.</p>
+                        <h5 class="title title--h5 timeline__title">
+                            {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.where }}</a>{% else %}{{ item.where }}{% endif %}{% if item.what %} - {{ item.what }}{% endif %}</h5>
+                        <span class="timeline__period">{{ item.start }} — {{ item.end }}</span>
+                        <p class="timeline__description">{{ item.description }}</p>
                     </article>
-                    <!-- Item -->
-                    <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title"><a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> - MSc</h5>
-                        <span class="timeline__period">2017 — 2020</span>
-                        <p class="timeline__description">I obtained a master’s degree with honors in Computer Science and Engineering at Politecnico di Milano, defending a thesis on machine learning. During the two years of studies, I mostly attended AI-oriented courses.</p>
-                    </article>
-                    <!-- Item -->
-                    <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title"><a href="http://www.upv.es/en" target="_blank" rel="noopener noreferrer">Universitat Politècnica de València</a></h5>
-                        <span class="timeline__period">Sep 2018 — Jan 2019</span>
-                        <p class="timeline__description">During the semester spent abroad within the Erasmus program at the School of Informatics of the Polytechnic University of Valencia, I attended Spanish and English courses on programming, robotics and artificial intelligence.</p>
-                    </article>
-                    <!-- Item -->
-                    <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title"><a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> - BSc</h5>
-                        <span class="timeline__period">2014 — 2017</span>
-                        <p class="timeline__description">I obtained a bachelor’s degree in Engineering of Computing Systems at Politecnico di Milano. The course covered general topics of engineering and computer science.</p>
-                    </article>
-                    <!-- Item -->
-                    <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title">Liceo C. Caminiti</h5>
-                        <span class="timeline__period">2009 — 2014</span>
-                        <p class="timeline__description">I obtained a high school diploma with a specific focus in mathematics and science at the Liceo Scientifico Caminiti in Santa Teresa di Riva (ME, Sicilian Kingdom).</p>
-                    </article>
+                    {% endfor %}
+
                 </div>
             </div>
             <div class="col-12 col-lg-6">
@@ -55,18 +34,16 @@ order: 2
                         <use href="#marshkicon-blackboard" /></svg>Teaching
                 </h2>
                 <div class="timeline">
-                    <!-- Item -->
+
+                    {% for item in site.data.resume.teaching %}
                     <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title"><a href="https://search.usi.ch/corsi/35263629/graph-deep-learning" target="_blank" rel="noopener noreferrer">Graph Deep Learning</a> (MSc)</h5>
-                        <span class="timeline__period">Feb 2022 — Jun 2022 @ USI</span>
-                        <p class="timeline__description">I co-delivered a lesson on Spatiotemporal Graph Neural Networks and tutored students on GDL projects.</p>
+                        <h5 class="title title--h5 timeline__title">
+                            {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.course }}</a>{% else %}{{ item.course }}{% endif %}{% if item.class %} ({{ item.class }}){% endif %}</h5>
+                        <span class="timeline__period">{{ item.start }} — {{ item.end }} @ {{ item.where }}</span>
+                        <p class="timeline__description">{{ item.description }}</p>
                     </article>
-                    <!-- Item -->
-                    <article class="timeline__item">
-                        <h5 class="title title--h5 timeline__title"><a href="https://search.usi.ch/corsi/35262279/machine-learning" target="_blank" rel="noopener noreferrer">Machine Learning</a> (BSc)</h5>
-                        <span class="timeline__period">Feb 2021 — Jun 2021 @ USI</span>
-                        <p class="timeline__description"><a href="https://github.com/marshka/ml-20-21" target="_blank" rel="noopener noreferrer">Lab sessions</a> on practical aspects and show how to design machine learning solutions to real-world problems.</p>
-                    </article>
+                    {% endfor %}
+                    
                 </div>
             </div>
         </div>
