@@ -10,7 +10,7 @@ categories:
 link: https://arxiv.org/abs/2108.00298
 code: https://github.com/Graph-Machine-Learning-Group/grin
 venue: ICLR 2022
-thumbnail: grin.png
+thumbnail: 2108.00298.jpg
 layout: abstract
 order: 1
 ---

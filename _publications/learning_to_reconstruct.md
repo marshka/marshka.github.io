@@ -8,7 +8,7 @@ abstract: "Dealing with missing values and incomplete time series is a labor-int
 categories:
     - imputation
 link: https://arxiv.org/abs/2205.13479
-venue: arXiv
+venue: NeurIPS 2022
 thumbnail: 2205.13479.jpg
 layout: abstract
 order: 2

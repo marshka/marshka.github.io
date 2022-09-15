@@ -27,6 +27,13 @@ education:
     end: 2014
     description: "I obtained a high school diploma with a specific focus in mathematics and science at the Liceo Scientifico Caminiti in Santa Teresa di Riva (ME, Sicilian Kingdom)."
 teaching:
+  - course: "Advanced Topics in Machine Learning"
+    class: "MSc"
+    url: "https://search.usi.ch/it/corsi/35265685/advanced-topics-in-machine-learning"
+    where: "USI"
+    start: "Sep 2022" 
+    end: "Jan 2023"
+    description: "Interactive course on advanced topics in machine learning, considering both technologies/methodologies and applications."
   - course: "Graph Deep Learning"
     class: "MSc"
     url: "https://search.usi.ch/corsi/35263629/graph-deep-learning"

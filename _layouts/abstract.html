@@ -1,11 +1,11 @@
 ---
 layout: page
 ---
-<div class="pb-0 pb-sm-2">
+<div class="pb-2">
     <h1 class="title title--h1 first-title title__separate">Publications <a href="{{ 'publications.html' | absolute_url }}">⇤</a></h1>
-    <div class="header-post__image-wrap">
-        <img class="cover ls-is-cached lazyloaded" src="{{ page.thumbnail | prepend: 'assets/img/' | absolute_url}}" alt="">
-    </div>
+    <!-- div class="post-header-image">
+        <img class="cover ls-is-cached lazyloaded" src="{{ page.landscape | prepend: 'assets/img/' | absolute_url}}" alt="">
+    </div -->
     <h1 class="title title--h1 first-title title__separate">{{ page.title }}</h1>
     <!-- Authors -->
     <p>{% for author in page.authors %}
@@ -28,6 +28,7 @@ layout: page
         {% if page.code %}
         <a href="{{ page.code }}" target="_blank"><svg class="marshkicon text-icon">
                 <use href="#marshkicon-github" /></svg>GitHub</a>
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.code | slice: 19, 999 }}?style=social">
         {% endif %}
     </p>
 </div>
