@@ -1,31 +1,37 @@
 education:
   - where: "Università della Svizzera italiana"
-    what: "Ph.D. student"
+    what: "Ph.D. Student"
+    course: "Informatics"
     url: "https://www.usi.ch"
     start: 2020
     end: "ongoing"
     description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of prof. Cesare Alippi."
   - where: "Politecnico di Milano"
     what: "MSc"
+    course: "Computer Science and Engineering"
     url: "https://www.polimi.it/en/"
     start: 2017
     end: 2020
     description: "I obtained a master’s degree with honors in Computer Science and Engineering at Politecnico di Milano, defending a thesis on machine learning. During the two years of studies, I mostly attended AI-oriented courses."
   - where: "Universitat Politècnica de València"
+    what: "Erasmus"
     url: "http://www.upv.es/en"
     start: "Sep 2018"
     end: "Jan 2019"
     description: "During the semester spent abroad within the Erasmus program at the School of Informatics of the Polytechnic University of Valencia, I attended Spanish and English courses on programming, robotics and artificial intelligence."
   - where: "Politecnico di Milano"
     what: "BSc"
+    course: "Engineering of Computing Systems"
     url: "https://www.polimi.it/en/"
     start: 2014
     end: 2017
     description: "I obtained a bachelor’s degree in Engineering of Computing Systems at Politecnico di Milano. The course covered general topics of engineering and computer science."
   - where: "Liceo C. Caminiti"
+    what: "High School"
+    course: "Mathematics"
     start: 2009
     end: 2014
-    description: "I obtained a high school diploma with a specific focus in mathematics and science at the Liceo Scientifico Caminiti in Santa Teresa di Riva (ME, Sicilian Kingdom)."
+    description: "I obtained a high school diploma with a specific focus in mathematics and science at <i>Liceo Scientifico Caminiti</i> in Santa Teresa di Riva (Sicily)."
 teaching:
   - course: "Advanced Topics in Machine Learning"
     class: "MSc"

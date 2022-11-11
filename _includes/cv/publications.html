@@ -1,0 +1,39 @@
+{% assign publications = site.publications | sort: "order" | reverse %}
+<section class="section publications-section">
+
+  <h2 class="section-title">
+    Publications
+  </h2>
+
+  {% if publications.intro %}
+  <div class="intro">
+    {{ publications.intro | markdownify }}
+    <p class="footnote"><sup>*</sup>Equal contribution.</p>
+  </div><!--//intro-->
+  {% endif %}
+  
+  {% for pub in publications %}
+  <div class="item">
+    {% if pub.link %}
+      <li><a href="{{ pub.link }}">{{ pub.title }}</a></li>
+    {% else %}
+      <li>{{ pub.title }}</li>
+    {% endif %}
+    <div class="publication-authors">
+      {% for author in pub.authors %}
+        {%assign ivan = author | slice: 0, 12%}
+        {% if ivan == "Ivan Marisca" %}
+          <strong>{{ author }}</strong>
+        {% else %}
+          {{ author }}
+        {% endif %}
+        {% if author != pub.authors.last %}
+          ,
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="publication-conference">{{ pub.venue }}</div>
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->

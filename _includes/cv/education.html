@@ -1,0 +1,39 @@
+{% assign education = site.data.resume.education %}
+<section class="section educations-section">
+
+  <h2 class="section-title">
+    Education
+  </h2>
+
+  {% for item in education %}
+  <div class="item">
+
+    <div class="meta">
+
+      <div class="upper-row">
+        <h3 class="degree"><strong>{{ item.what }}</strong> {% if item.course %}
+          in {{ item.course }}
+          {% endif %}</h3>
+        <div class="time">{{ item.start }} — {{ item.end }}</div>
+      </div><!--//upper-row-->
+      <div class="university">
+        {% if item.url %}
+          <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+            {{ item.where }}
+          </a>
+          {% else %}
+          {{ item.where }}
+        {% endif %}
+      </div>
+    </div><!--//meta-->
+
+    {% if item.description %}
+    <div class="details">
+      {{ item.description | markdownify }}
+    </div><!--//details-->
+    {% endif %}
+
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->

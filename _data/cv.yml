@@ -1,0 +1,89 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+
+    # Profile information
+    name: Ivan
+    surname: Marisca
+    tagline: Ph.D. Student
+    avatar: face_thumb.jpg  # inside /assets/images/ folder
+
+    # Sidebar links
+    email: marisca.ivan@gmail.com
+    # phone: 
+    place: Lugano, Switzerland
+    citizenship: Italian
+    website: marshka.github.io #do not add http://
+    linkedin: ivanmarisca
+    github: marshka
+    telegram: marshka # add your nickname without '@' sign
+    twitter: '@IvanMarisca'
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    # pdf: 
+
+    languages:
+      title: Languages
+      info:
+        - idiom: Italian
+          level: Native
+
+        - idiom: English
+          level: Professional
+
+        - idiom: French
+          level: Basic
+
+        - idiom: Spanish
+          level: Basic
+
+summary: >
+  <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a>, at Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>.
+  My research focuses on problems regarding <strong>irregular spatiotemporal data</strong>, like prediction, imputation, and control on sensor networks.</p>
+  <p>I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a>. My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
+
+theses:
+  - name: Marco Latella
+    title: "Graph Representation Learning for Multi-site Photovoltaic Energy Production"
+    year: 2022
+    degree: MSc
+    university: USI
+
+talks:
+  - type: Invited talk
+    venue: Baker Hughes
+    description: Invited to give a webinar on time series imputation (together with Andrea Cini).
+    year: 2022
+  - type: Poster presentation
+    venue: ICLR
+    description: The 10th International Conference on Learning Representations (Virtual)
+    year: 2022
+  - type: Abstract presentation
+    venue: MLDM
+    description: The 10th Italian Workshop on Machine Learning and Data Mining (Virtual)
+    year: 2021
+
+
+awards:
+  - type: Travel award
+    venue: NeurIPS
+    description: Travel award to attend the NeurIPS 2022 conference in New Orleans (US).
+    year: 2022
+  - type: Scholarship
+    venue: SAPAR
+    description: Scholarship awarded to the top 4 STEM students.
+    year: 2019
+  - type: Scholarship
+    venue: Politecnico di Milano
+    description: Reduced tuition for high merits.
+    year: 2019
+
+
+projects:
+  - name: Torch Spatiotemporal (TSL)
+    link: "#hook"
+    description: "A library built upon PyTorch and PyG for neural spatiotemporal data processing, with a focus on Graph Neural Networks."
+
+footer: >
+    I hereby authorize the use of my personal data in accordance to the GDPR 679/16 - "European regulation on the protection of personal data".
