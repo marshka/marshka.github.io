@@ -1,4 +1,3 @@
-{% assign projects = site.data.cv.projects %}
 <section class="section projects-section">
     <h2 class="section-title">Projects</h2>
 
@@ -7,21 +6,36 @@
     </div>
 
     <!-- TSL -->
-    <div class="card shadow-sm">
+    <div class="card shadow-sm mb-4">
         <div class="card-body">
             <h5 class="card-title"><a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank">
             <img class="card-img-left" style="width: 3rem;" src="{{site.baseurl}}/assets/img/tsl_logo.svg" alt="" />
           Torch Spatiotemporal</a></h5>
             <p class="card-text">Torch Spatiotemporal (<strong>TSL</strong>) is a library built upon <a href="https://pytorch.org/">PyTorch</a> and <a href="https://github.com/pyg-team/pytorch_geometric/">PyG</a> for neural spatiotemporal data processing, with a focus on Graph Neural Networks.</p>
-            <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank" class="card-link">GitHub</a>
-            <a href="https://torch-spatiotemporal.readthedocs.io/en/latest/" target="_blank" class="card-link">Documentation</a>
-            <!-- div class="case-item__links">
-                        <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank"><svg class="marshkicon text-icon">
-                                <use href="#marshkicon-github" /></svg>GitHub</a>
-                        <a href="https://torch-spatiotemporal.readthedocs.io/en/latest/" target="_blank"><svg class="marshkicon text-icon">
-                                <use href="#marshkicon-rtd" /></svg>Documentation</a>
-                    </div-->
+            <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank" class="card-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://torch-spatiotemporal.readthedocs.io/en/latest/" target="_blank" class="card-link"><i class="fas fa-book"></i> Documentation</a>
         </div>
     </div>
+
+    {% assign projects = site.data.cv.projects %}
+    <h3>Other projects</h3>
+    <ul class="cv-list">
+        {% for project in projects %}
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a>
+                    <div class="time">{{ project.year }}</div>
+                </div>
+                <!--//upper-row-->
+            </div>
+            {% if project.description %}
+            <p>{{ project.description }}</p>
+            {% endif %}
+        </li>
+        <!--//item-->
+        {% endfor %}
+    </ul>
+
 </section>
 <!--//section-->

@@ -2,16 +2,14 @@
     <h2 class="section-title">
         Academic activities
     </h2>
-    
     <h3>Teaching</h3>
     {% assign teaching = site.data.resume.teaching %}
-    <ul class="">
+    <ul class="cv-list">
         {% for course in teaching %}
         <li class="item">
             <div class="meta">
                 <div class="upper-row">
-                    <a href="{{ course.url }}" target="_blank">
-                      <strong>{{ course.course }}</strong></a>, {{ course.class }} at {{ course.where }}
+                    <strong>{{ course.course }}</strong>, {{ course.class }} at {{ course.where }}
                     <div class="time">{{ course.start }} — {{ course.end }}</div>
                 </div>
                 <!--//upper-row-->
@@ -21,10 +19,9 @@
         <!--//item-->
         {% endfor %}
     </ul>
-    
     <h3>Supervised students</h3>
     {% assign theses = site.data.cv.theses %}
-    <ul class="">
+    <ul class="cv-list">
         {% for thesis in theses %}
         <li class="item">
             <div class="meta">
@@ -39,10 +36,10 @@
         <!--//item-->
         {% endfor %}
     </ul>
-    
+    <div class="page-break"></div>
     <h3>Talks</h3>
     {% assign talks = site.data.cv.talks %}
-    <ul class="">
+    <ul class="cv-list">
         {% for talk in talks %}
         <li class="item">
             <div class="meta">
@@ -59,10 +56,9 @@
         <!--//item-->
         {% endfor %}
     </ul>
-    
     <h3>Awards & Scholarships</h3>
     {% assign awards = site.data.cv.awards %}
-    <ul class="">
+    <ul class="cv-list">
         {% for award in awards %}
         <li class="item">
             <div class="meta">
