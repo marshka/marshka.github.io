@@ -1,0 +1,58 @@
+<head>
+    <meta charset="utf-8" />
+    <title>{{ site.name }} / {{ page.title }}</title>
+    <!-- Meta Data -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="author" content="Ivan Marisca" />
+    <meta name="description" content="Ph.D. student at the Graph Machine Learning Group, within the Swiss AI lab IDSIA, at Università della Svizzera italiana (USI)." />
+    <!-- Twitter data -->
+    <meta name="twitter:card" content="{{'assets/img/face_thumb.jpg' | absolute_url }}">
+    <meta name="twitter:site" content="marshka.github.io">
+    <meta name="twitter:title" content="Ivan Marisca">
+    <meta name="twitter:description" content="Ph.D. student at the Graph Machine Learning Group, within the Swiss AI lab IDSIA, at Università della Svizzera italiana (USI).">
+    <meta name="twitter:image" content="{{'assets/img/face_thumb.jpg' | absolute_url }}">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Ivan Marisca" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="marshka.github.io" />
+    <meta property="og:image" content="{{'assets/img/face_thumb.jpg' | absolute_url }}" />
+    <meta property="og:description" content="Ph.D. student at the Graph Machine Learning Group, within the Swiss AI lab IDSIA, at Università della Svizzera italiana (USI)." />
+    <meta property="og:site_name" content="Ivan Marisca · Ph.D. student" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ 'assets/favicon/apple-icon-57x57.png' | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ 'assets/favicon/apple-icon-72x72.png' | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ 'assets/favicon/apple-icon-114x114.png' | absolute_url }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ 'assets/favicon/apple-icon-144x144.png' | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ 'assets/favicon/android-icon-192x192.png' | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ 'assets/favicon/favicon-96x96.png' | absolute_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | absolute_url }}">
+    <link rel="manifest" href="{{ 'assets/favicon/manifest.json' | absolute_url }}">
+    <meta name="msapplication-TileColor" content="#d6392e">
+    <meta name="msapplication-TileImage" content="{{ 'assets/favicon/ms-icon-144x144.png' | absolute_url }}">
+    <meta name="theme-color" content="#d6392e">
+    <!-- Styles -->
+	{% if page.title == "CV" %}
+	  <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/vendors/bootstrap.min.css">
+	  <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/vendors/font-awesome/css/all.css">
+	  <link id="theme-style" rel="stylesheet" href="{{ site.baseurl }}/assets/styles/cv.css">
+	{% else %}
+	    <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style.css' | absolute_url }}" />
+	    <link rel="stylesheet" type="text/css" href="{{ 'assets/styles/style-dark.css' | absolute_url }}" id="dark-theme" disabled>
+	    <script type="text/javascript">
+	    const darkTheme = document.querySelector("#dark-theme");
+	    var currentTheme = localStorage.getItem("theme");
+	    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+	    if (currentTheme == null) {
+	        currentTheme = prefersDarkScheme.matches ? 'dark' : 'light';
+	    }
+
+	    darkTheme.disabled = currentTheme == "dark" ? false : true;
+	    localStorage.setItem("theme", currentTheme);
+	    </script>
+	{% endif %}
+</head>

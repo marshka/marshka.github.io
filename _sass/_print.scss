@@ -21,6 +21,10 @@
         height: $page-margin * 1.2;
     }
 
+    .page-margin {
+        height: $page-margin;
+    }
+
     .sidebar-wrapper {
         background: #fff;
         padding-left: $page-margin !important;
@@ -34,6 +38,8 @@
     .main-wrapper {
         background: #fff;
         padding-right: $page-margin * 1.2 !important;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .wrapper {

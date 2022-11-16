@@ -20,8 +20,14 @@
     {% endif %}
 
     {% if sidebar.citizenship %}
-    <li class="phone"><i class="fas fa-passport"></i>
+    <li class="citizenship"><i class="fas fa-passport"></i>
       {{ sidebar.citizenship }}
+    </li>
+    {% endif %}
+
+    {% if sidebar.birthday %}
+    <li class="birthday"><i class="fas fa-cake-candles"></i>
+      {{ sidebar.birthday }}
     </li>
     {% endif %}
 
