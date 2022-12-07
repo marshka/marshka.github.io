@@ -37,7 +37,7 @@ sidebar:
 
 summary: >
   <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a>, at Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>.
-  My research focuses on problems regarding <strong>irregular spatiotemporal data</strong>, like prediction, imputation, and control on sensor networks.</p>
+  My research focuses on problems regarding <strong>irregular spatiotemporal data</strong>, like prediction, imputation, and control on sensor networks using <strong>geometric deep learning</strong>.</p>
   <p>I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a>. My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
 
 theses:
@@ -48,6 +48,14 @@ theses:
     university: USI
 
 talks:
+  - type: Spotlight presentation
+    venue: TGL Workshop
+    description: The <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> at NeurIPS 2022 (New Orleans).
+    year: 2022
+  - type: Poster presentation
+    venue: NeurIPS
+    description: The 36th Conference on Neural Information Processing Systems (New Orleans).
+    year: 2022
   - type: Invited talk
     venue: Baker Hughes
     description: Invited to give a webinar on time series imputation (Virtual).
@@ -63,7 +71,11 @@ talks:
 
 
 awards:
-  - type: Travel award
+  - type: Best Paper Award
+    venue: <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> @ NeurIPS
+    description: For the paper "Scalable Spatiotemporal Graph Neural Networks".
+    year: 2022
+  - type: Travel Award
     venue: NeurIPS
     description: Travel award to attend the NeurIPS conference in New Orleans (US).
     year: 2022

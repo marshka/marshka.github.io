@@ -2,6 +2,7 @@
 
     body {
         padding: 0 !important;
+        background: #fff;
     }
 
     .wrapper {
@@ -27,7 +28,7 @@
 
     .sidebar-wrapper {
         background: #fff;
-        padding-left: $page-margin !important;
+        padding-left: $page-margin * 0.7 !important;
 
         .avatar {
             border: 4px solid #fff;
@@ -40,6 +41,7 @@
         padding-right: $page-margin * 1.2 !important;
         padding-top: 0;
         padding-bottom: 0;
+        padding-left: $page-margin * 0.7;
     }
 
     .wrapper {
@@ -50,6 +52,7 @@
         padding-top: $page-margin * 1.2 !important;
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
+        box-shadow: 0 .25rem .5rem rgba(0,0,0,.175)!important;
     }
 
     .container-block * {
@@ -62,6 +65,13 @@
 
     a {
         text-decoration: none !important;
+    }
+
+    .cv-footer {
+        height: $page-margin * 0.7;
+        right: $page-margin;
+        position: fixed;
+        bottom: 0;
     }
 
 }

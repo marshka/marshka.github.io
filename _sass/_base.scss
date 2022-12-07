@@ -328,6 +328,17 @@ p {
 .cv-list {
     padding-left: 20px;
     list-style: square;
+    margin-bottom: 1.25rem;
+}
+
+.cv-list p {
+    margin-bottom: 0.5rem;
+}
+
+.cv-footer {
+    font-size: 0.8rem;
+    color: lighten($text-color, 30%);
+    text-align: end;
 }
 
 .card-body {
