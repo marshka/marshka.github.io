@@ -9,6 +9,7 @@ abstract: "Neural forecasting of spatiotemporal time series drives both research
 categories:
     - prediction
 link: https://arxiv.org/abs/2209.06520
+code: https://github.com/Graph-Machine-Learning-Group/sgp
 venue: AAAI 2023
 thumbnail: 2209.06520.jpg
 layout: abstract
