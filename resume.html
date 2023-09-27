@@ -17,7 +17,7 @@ layout: page
                         <use href="#marshkicon-academic-cap" /></svg>Education</h2>
                 <div class="timeline">
 
-                    {% for item in site.data.resume.education %}
+                    {% for item in site.data.cv.education %}
                     <article class="timeline__item">
                         <h5 class="title title--h5 timeline__title">
                             {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.where }}</a>{% else %}{{ item.where }}{% endif %}{% if item.what %} - {{ item.what }}{% endif %}</h5>
@@ -35,7 +35,7 @@ layout: page
                 </h2>
                 <div class="timeline">
 
-                    {% for item in site.data.resume.teaching %}
+                    {% for item in site.data.cv.teaching %}
                     <article class="timeline__item">
                         <h5 class="title title--h5 timeline__title">
                             {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.course }}</a>{% else %}{{ item.course }}{% endif %}{% if item.class %} ({{ item.class }}){% endif %}</h5>
@@ -52,18 +52,21 @@ layout: page
     <div id="sec-industry-projects" class="box-inner box-inner--rounded">
         <h2 class="title title--h3">Industry Projects</h2>
         <div class="row">
+            {% for item in site.data.cv.projects %}
             <!-- Case Item -->
             <div class="col-12">
                 <div class="case-item box box__second">
-                    <img class="case-item__icon" src="assets/img/innosuisse.jpeg" alt="" />
+                    {% if item.image %}
+                    <img class="case-item__icon" src="{{item.image}}" alt="" />
+                    {% endif %}
                     <div>
-                        <h3 class="title title--h4 mb-0"><a href="https://search.usi.ch/it/progetti/2096/graph-based-predictors-for-photovoltaic-power-forecasting" target="_blank" rel="noopener noreferrer">GraPV</a></h3>
-                        <span class="timeline__period">Sep 2020 — ongoing</span>
-                        <p class="case-item__caption">We develop an advanced photovoltaic power forecasting solution, to improve production accuracy prediction - resulting in better trading effectiveness in energy imbalance markets. The solution is based on novel graph-based AI strategies exploiting existing heterogeneous information and related dependencies.</p>
-                        <p>Funded by <a href="https://www.innosuisse.ch/inno/en/home.html" target="_blank" rel="noopener noreferrer">Innosuisse</a></p>
+                        <h3 class="title title--h4 mb-0"><a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{item.name}}</a></h3>
+                        <span class="timeline__period">{{item.start_date}} — {{item.end_date}}</span>
+                        <p class="case-item__caption">{{ item.description }}</p>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>

@@ -9,7 +9,7 @@ abstract: "Spatiotemporal graph neural networks have shown to be effective in ti
 categories:
     - prediction
 link: https://arxiv.org/abs/2302.04071
-venue: Preprint
+venue: NeurIPS 2023
 thumbnail: 2302.04071.jpg
 layout: abstract
 order: 4

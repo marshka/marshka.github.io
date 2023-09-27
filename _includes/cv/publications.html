@@ -1,38 +1,29 @@
-{% assign publications = site.publications | sort: "order" | reverse %}
+{% assign publications = site.data.publications %}
 <section class="section publications-section">
 
   <h2 class="section-title">
     Publications
   </h2>
 
-  {% if publications.intro %}
-  <div class="intro">
-    {{ publications.intro | markdownify }}
-    <p class="footnote"><sup>*</sup>Equal contribution.</p>
-  </div><!--//intro-->
-  {% endif %}
-  
   {% for pub in publications %}
   <div class="item">
-    {% if pub.link %}
-      <li><a href="{{ pub.link }}">{{ pub.title }}</a></li>
+    {% if pub.links.paper %}
+    <li><a href="{{ pub.links.paper }}">{{ pub.title }}</a></li>
     {% else %}
-      <li>{{ pub.title }}</li>
+    <li>{{ pub.title }}</li>
     {% endif %}
-    <div class="publication-authors">
+    <ul class="publication-authors">
       {% for author in pub.authors %}
-        {%assign ivan = author | slice: 0, 12%}
-        {% if ivan == "Ivan Marisca" %}
-          <strong>{{ author }}</strong>
+      <li class="publication-author {%if forloop.index0 < pub.first_authors%}equal-contrib{% endif %}">
+        {% if author == "me" %}
+        <strong>Ivan Marisca</strong>
         {% else %}
-          {{ author }}
+        {{ author.name }} {{ author.surname }}
         {% endif %}
-        {% if author != pub.authors.last %}
-          ,
-        {% endif %}
+      </li>
       {% endfor %}
-    </div>
-    <div class="publication-conference">{{ pub.venue }}</div>
+    </ul>
+    <div class="publication-venue"><span class="font-italic">{{ pub.venue }}</span>, {{ pub.year }}</div>
   </div><!--//item-->
   {% endfor %}
   <p><sup>*</sup>Equal contribution.</p>

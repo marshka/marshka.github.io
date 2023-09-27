@@ -3,14 +3,16 @@
         Academic activities
     </h2>
     <h3>Teaching</h3>
-    {% assign teaching = site.data.resume.teaching %}
+    {% assign teaching = site.data.cv.teaching %}
     <ul class="cv-list">
         {% for course in teaching %}
         <li class="item">
             <div class="meta">
                 <div class="upper-row">
-                    <strong>{{ course.course }}</strong>, {{ course.class }} at {{ course.where }}
-                    <div class="time">{{ course.start }} — {{ course.end }}</div>
+                    <div class="cv-item-title">
+                        <strong>{{ course.course }}</strong>, {{ course.class }} at {{ course.where }}
+                    </div>
+                    <div class="cv-item-time">{{ course.start }} — {{ course.end }}</div>
                 </div>
                 <!--//upper-row-->
             </div>
@@ -26,8 +28,10 @@
         <li class="item">
             <div class="meta">
                 <div class="upper-row">
-                    <strong>{{ thesis.name }}</strong>, {{ thesis.degree }} at {{ thesis.university }}
-                    <div class="time">{{ thesis.year }}</div>
+                    <div class="cv-item-title">
+                        <strong>{{ thesis.name }}</strong>, {{ thesis.degree }} at {{ thesis.university }}
+                    </div>
+                    <div class="cv-item-time">{{ thesis.year }}</div>
                 </div>
                 <!--//upper-row-->
             </div>
@@ -43,8 +47,10 @@
         <li class="item">
             <div class="meta">
                 <div class="upper-row">
-                    <strong>{{ talk.type }}</strong> at {{ talk.venue }}
-                    <div class="time">{{ talk.year }}</div>
+                    <div class="cv-item-title">
+                        <strong>{{ talk.type }}</strong> at {{ talk.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ talk.year }}</div>
                 </div>
                 <!--//upper-row-->
             </div>
@@ -62,8 +68,10 @@
         <li class="item">
             <div class="meta">
                 <div class="upper-row">
-                    <strong>{{ award.type }}</strong> — {{ award.venue }}
-                    <div class="time">{{ award.year }}</div>
+                    <div class="cv-item-title">
+                        <strong>{{ award.type }}</strong> — {{ award.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ award.year }}</div>
                 </div>
                 <!--//upper-row-->
             </div>

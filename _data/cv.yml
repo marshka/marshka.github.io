@@ -15,7 +15,7 @@ sidebar:
     website: marshka.github.io #do not add http://
     linkedin: ivanmarisca
     github: marshka
-    telegram: marshka # add your nickname without '@' sign
+    # telegram: marshka # add your nickname without '@' sign
     twitter: IvanMarisca
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     pdf: ivan_marisca_cv.pdf
@@ -40,6 +40,79 @@ summary: >
   My research focuses on problems regarding <strong>irregular spatiotemporal data</strong>, like prediction, imputation, and control on sensor networks using <strong>geometric deep learning</strong>.</p>
   <p>I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a>. My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
 
+education:
+  - where: "Università della Svizzera italiana"
+    what: "Ph.D. Student"
+    course: "Informatics"
+    url: "https://www.usi.ch"
+    start: 2020
+    end: "ongoing"
+    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of prof. Cesare Alippi."
+  - where: "Politecnico di Milano"
+    what: "MSc"
+    course: "Computer Science and Engineering"
+    url: "https://www.polimi.it/en/"
+    start: 2017
+    end: 2020
+    description: "Master’s degree with honors (110/110L), defending a thesis on machine learning. During the two years of studies, I mostly attended AI-oriented courses."
+  - where: "Universitat Politècnica de València"
+    what: "Erasmus"
+    url: "http://www.upv.es/en"
+    start: "Sep 2018"
+    end: "Jan 2019"
+    description: "During the semester spent abroad (in Valencia) within the Erasmus program, I attended Spanish and English courses on programming, robotics and artificial intelligence."
+  - where: "Politecnico di Milano"
+    what: "BSc"
+    course: "Engineering of Computing Systems"
+    url: "https://www.polimi.it/en/"
+    start: 2014
+    end: 2017
+    description: "The course program covered general topics of engineering and computer science."
+  - where: "Liceo C. Caminiti"
+    what: "High School"
+    course: "Mathematics"
+    start: 2009
+    end: 2014
+    description: "High school diploma with a specific focus in mathematics and science at <i>Liceo Scientifico Caminiti</i> in Santa Teresa di Riva (Sicily)."
+
+teaching:
+  - course: "Advanced Topics in Machine Learning"
+    class: "MSc"
+    where: "USI"
+    start: "Sep 2023" 
+    end: "Jan 2024"
+    description: "Teaching assistant, involved in course organization, lecture preparation and students tutoring."
+  - course: "Graph Deep Learning"
+    class: "MSc"
+    where: "USI"
+    start: "Feb 2023" 
+    end: "Jun 2023"
+    description: "Lectures design and students tutoring on team projects."
+  - course: "Advanced Topics in Machine Learning"
+    class: "MSc"
+    where: "USI"
+    start: "Sep 2022" 
+    end: "Jan 2023"
+    description: "Students tutoring for projects on reproducibility."
+  - course: "Graph Deep Learning"
+    class: "MSc"
+    where: "USI"
+    start: "Feb 2022" 
+    end: "Jun 2022"
+    description: "I gave a lecture on Spatiotemporal Graph Neural Networks and tutored students on projects."
+  - course: "Introduzione all’Intelligenza Artificiale e ML"
+    class: "MSc"
+    where: "USI"
+    start: "Sep 2021" 
+    end: "Jan 2022"
+    description: "Course on AI and ML delivered in italian for the training of high school teachers qualified to teach computer science as a subject."
+  - course: "Machine Learning"
+    class: "BSc"
+    where: "USI"
+    start: "Feb 2021" 
+    end: "Jun 2021"
+    description: '<a href="https://github.com/marshka/ml-20-21" target="_blank" rel="noopener noreferrer">Lab sessions</a> on practical aspects and show how to design machine learning solutions to real-world problems.'
+
 theses:
   - name: Marco Latella
     title: "Graph Representation Learning for Multi-site Photovoltaic Energy Production"
@@ -48,37 +121,44 @@ theses:
     university: USI
 
 talks:
+  - type: Tutorial
+    venue: ECML/PKDD (Turin)
+    description: Presentation of the tutorial <a href="https://gmlg.ch/tutorials/graph-based-processing/ecml-2023">Graph Deep Learning for Spatiotemporal Time Series</a> with colleagues Daniele Zambon and Andrea Cini.
+    year: Sep 2023
+  - type: Reading group presentation
+    venue: TGL reading group (Virtual)
+    description: Invited to present the paper <a href="https://arxiv.org/abs/2209.06520">Scalable Spatiotemporal Graph Neural Networks</a> at the <a href="https://www.cs.mcgill.ca/~shuang43/rg.html">Temporal Graph Learning Reading Group</a>.
+    year: Apr 2023
   - type: Spotlight presentation
-    venue: TGL Workshop
-    description: The <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> at NeurIPS 2022 (New Orleans).
-    year: 2022
+    venue: TGL Workshop (New Orleans)
+    description: The <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> at NeurIPS 2022.
+    year: Dec 2022
   - type: Poster presentation
-    venue: NeurIPS
-    description: The 36th Conference on Neural Information Processing Systems (New Orleans).
-    year: 2022
+    venue: NeurIPS (New Orleans)
+    description: The 36th Conference on Neural Information Processing Systems.
+    year: Nov 2022
   - type: Invited talk
-    venue: Baker Hughes
-    description: Invited to give a webinar on time series imputation (Virtual).
-    year: 2022
+    venue: Baker Hughes (Virtual)
+    description: Invited to give a webinar on time series imputation.
+    year: Jul 2022
   - type: Poster presentation
-    venue: ICLR
-    description: The 10th International Conference on Learning Representations (Virtual).
-    year: 2022
+    venue: ICLR (Virtual)
+    description: The 10th International Conference on Learning Representations.
+    year: Apr 2022
   - type: Abstract presentation
-    venue: MLDM
-    description: The 10th Italian Workshop on Machine Learning and Data Mining (Virtual).
-    year: 2021
-
+    venue: MLDM (Virtual)
+    description: The 10th Italian Workshop on Machine Learning and Data Mining.
+    year: Nov 2021
 
 awards:
   - type: Best Paper Award
     venue: <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> @ NeurIPS
     description: For the paper "Scalable Spatiotemporal Graph Neural Networks".
-    year: 2022
+    year: Dec 2022
   - type: Travel Award
     venue: NeurIPS
     description: Travel award to attend the NeurIPS conference in New Orleans (US).
-    year: 2022
+    year: Nov 2022
   - type: Scholarship
     venue: SAPAR
     description: Scholarship awarded to the 4 best STEM students.
@@ -88,14 +168,14 @@ awards:
     description: Reduced tuition for high merits.
     year: 2019
 
-
 projects:
   - name: GraPV
     link: https://search.usi.ch/it/progetti/2096/graph-based-predictors-for-photovoltaic-power-forecasting
-    year: Sep 2020 — ongoing
+    start_date: Sep 2020
+    end_date: Feb 2023
+    image: assets/img/innosuisse.jpeg
     description: >
-      Developing of graph-based methods for multi-site photovoltaic power forecasting, to improve production accuracy prediction.
-      Funded by <a href="https://www.innosuisse.ch/inno/en/home.html" target="_blank" rel="noopener noreferrer">Innosuisse</a>.
+      Developing of graph-based methods for multi-site photovoltaic power forecasting, to improve accuracy on portfolio production prediction. The solution is based on novel graph-based AI strategies exploiting existing heterogeneous information and related dependencies. Funded by <a href="https://www.innosuisse.ch/inno/en/home.html" target="_blank" rel="noopener noreferrer">Innosuisse</a>.
 
 footer: >
     I hereby authorize the use of my personal data in accordance to the GDPR 679/16 - "European regulation on the protection of personal data".

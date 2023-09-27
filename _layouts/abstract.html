@@ -28,7 +28,7 @@ layout: page
         {% if page.code %}
         <a href="{{ page.code }}" target="_blank"><svg class="marshkicon text-icon">
                 <use href="#marshkicon-github" /></svg>GitHub</a>
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.code | slice: 19, 999 }}?style=social">
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ page.code | split: 'github.com/' | last }}?style=social">
         {% endif %}
     </p>
 </div>

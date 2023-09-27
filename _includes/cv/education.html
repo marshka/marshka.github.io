@@ -1,4 +1,4 @@
-{% assign education = site.data.resume.education %}
+{% assign education = site.data.cv.education %}
 <section class="section educations-section">
 
   <h2 class="section-title">
@@ -11,10 +11,12 @@
     <div class="meta">
 
       <div class="upper-row">
+        <div class="cv-item-title">
         <h3 class="degree"><strong>{{ item.what }}</strong> {% if item.course %}
           in {{ item.course }}
           {% endif %}</h3>
-        <div class="time">{{ item.start }} — {{ item.end }}</div>
+        </div>
+        <div class="cv-item-time">{{ item.start }} — {{ item.end }}</div>
       </div><!--//upper-row-->
       <div class="university">
         {% if item.url %}
