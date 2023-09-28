@@ -308,13 +308,14 @@ p {
         list-style: none;
     }
 
-    .equal-contrib::after {
-        content: "*";
+    .publication-author-equal-contrib {
+        margin-left: -0.15em;
     }
 
-    // .publication-author ~.publication-author::before {
-    //     content: ', ';
-    // }
+    .publication-author-sep {
+        margin-left: -0.25em;
+        margin-right: 0.25em;
+    }
 
     .publication-venue {
         color: $text-grey;

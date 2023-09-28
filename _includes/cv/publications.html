@@ -15,16 +15,21 @@
       {% endif %}
       <ul class="publication-authors">
         {% for author in pub.authors %}
-        <li class="publication-author {%if forloop.index0 < pub.first_authors%}equal-contrib{% endif %}">
+        <li class="publication-author">
+          <span class="publication-author-name">
           {% if author == "me" %}
           <strong>Ivan Marisca</strong>
           {% else %}
           {{ author.name }} {{ author.surname }}
           {% endif %}
+        </span>
+        {%if forloop.index0 < pub.first_authors%}
+        <span class="publication-author-equal-contrib"><sup>*</sup></span>
+        {% endif %}
+          {% unless forloop.last %}
+          <span class="publication-author-sep">,</span>
+          {% endunless %}
         </li>
-        {% unless forloop.last %}
-        <span class="mr-1">,</span>
-        {% endunless %}
         {% endfor %}
       </ul>
       <div class="publication-venue"><span class="font-italic">{{ pub.venue }}</span>, {{ pub.year }}</div>
