@@ -1,12 +1,13 @@
 {% assign sidebar = site.data.cv.sidebar %}
 <div class="sidebar-wrapper">
 
-  <div class="profile-container">
+  <div class="profile-container d-flex d-md-block">
 
     {% if sidebar.name %}
     <img class="avatar" src="{{ site.baseurl }}/assets/img/{{ sidebar.avatar }}" alt="profile picture" />
     {% endif %}
 
+    <div>
     {% if sidebar.name %}
     <h1 class="name">{{ sidebar.name }}
     {% if sidebar.surname %}
@@ -19,6 +20,37 @@
     <h3 class="tagline">{{ sidebar.tagline }}</h3>
     {% endif %}
 
+    <div class="profile-links d-md-none">    
+
+      {% if sidebar.website %}
+      <a href="https://{{ sidebar.website }}" data-toggle="tooltip" data-placement="top" title="{{ sidebar.website }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe-americas"></i></a>
+      {% endif %}
+
+      {% if sidebar.email %}
+      <a href="mailto:{{ sidebar.email }}" data-toggle="tooltip" data-placement="top" title="{{ sidebar.email }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+      {% endif %}
+
+      {% if sidebar.phone %}
+      <a href="tel:{{ sidebar.phone }}" data-toggle="tooltip" data-placement="top" title="{{ sidebar.phone }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i></a>
+      {% endif %}
+
+      {% if sidebar.linkedin %}
+      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" data-toggle="tooltip" data-placement="top" title="{{ sidebar.linkedin }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+      {% endif %}
+    
+      {% if sidebar.telegram %}
+      <a href="https://t.me/{{ sidebar.telegram }}" data-toggle="tooltip" data-placement="top" title="{{ sidebar.telegram }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram"></i></a>
+      {% endif %}
+  
+      {% if sidebar.github %}
+      <a href="http://github.com/{{ sidebar.github }}" data-toggle="tooltip" data-placement="top" title="{{ sidebar.github }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      {% endif %}
+  
+      {% if sidebar.twitter %}
+      <a href="https://twitter.com/{{ sidebar.twitter }}" data-toggle="tooltip" data-placement="top" title="@{{ sidebar.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+      {% endif %}
+    </div><!--//contact-container-->
+  </div>
   </div><!--//profile-container-->
 
   {% include cv/contact.html %}

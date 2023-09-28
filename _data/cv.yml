@@ -4,7 +4,7 @@ sidebar:
     name: Ivan
     surname: Marisca
     tagline: Ph.D. Student
-    avatar: face_thumb.jpg  # inside /assets/images/ folder
+    avatar: face_thumb_nobg.png  # inside /assets/images/ folder
 
     # Sidebar links
     email: ivan.marisca@usi.ch

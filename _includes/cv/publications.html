@@ -5,27 +5,29 @@
     Publications
   </h2>
 
-  {% for pub in publications %}
-  <div class="item">
-    {% if pub.links.paper %}
-    <li><a href="{{ pub.links.paper }}">{{ pub.title }}</a></li>
-    {% else %}
-    <li>{{ pub.title }}</li>
-    {% endif %}
-    <ul class="publication-authors">
-      {% for author in pub.authors %}
-      <li class="publication-author {%if forloop.index0 < pub.first_authors%}equal-contrib{% endif %}">
-        {% if author == "me" %}
-        <strong>Ivan Marisca</strong>
-        {% else %}
-        {{ author.name }} {{ author.surname }}
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-    <div class="publication-venue"><span class="font-italic">{{ pub.venue }}</span>, {{ pub.year }}</div>
-  </div><!--//item-->
-  {% endfor %}
+  <ul class="list-unstyled">
+    {% for pub in publications %}
+    <li class="item">
+      {% if pub.links.paper %}
+        <a href="{{ pub.links.paper }}">{{ pub.title }}</a>
+      {% else %}
+        {{ pub.title }}
+      {% endif %}
+      <ul class="publication-authors">
+        {% for author in pub.authors %}
+        <li class="publication-author {%if forloop.index0 < pub.first_authors%}equal-contrib{% endif %}">
+          {% if author == "me" %}
+          <strong>Ivan Marisca</strong>
+          {% else %}
+          {{ author.name }} {{ author.surname }}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="publication-venue"><span class="font-italic">{{ pub.venue }}</span>, {{ pub.year }}</div>
+    </li><!--//item-->
+    {% endfor %}
+  </ul>
   <p><sup>*</sup>Equal contribution.</p>
 
 </section><!--//section-->

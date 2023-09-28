@@ -34,6 +34,7 @@ h3,
 
 a {
     color: $theme-color;
+    text-decoration: none;
 
     &:hover {
         text-decoration: underline;
@@ -74,6 +75,8 @@ p {
         background: darken($theme-color, 10%);
         text-align: center;
         color: #fff;
+        gap: 15px;
+        justify-content: space-evenly;
     }
 
     .name {
@@ -91,17 +94,30 @@ p {
         margin-bottom: 0;
     }
 
+    .profile-links {
+        display: inline-flex;
+        margin-top: .5rem;
+        gap: .5rem;
+    }
+
     .profile {
         margin-bottom: 15px;
     }
 
     .avatar {
         //used for profile image
-        max-width: 150px;
-        margin-bottom: 15px;
-        border: 0px solid #fff;
+        max-width: 100px;
+        max-height: 100px;
+        border: 3px solid #fff;
+        background-color: white;
         border-radius: 100%;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+        @media (min-width: 768px) {
+            max-width: 150px;
+            max-height: 150px;
+            margin-bottom: 15px;
+        }
     }
 
     .contact-list {
@@ -204,15 +220,6 @@ p {
     background: #fff;
     padding: $page-margin;
 
-    // .section-title {
-    //   text-transform: uppercase;
-    //   font-size: 20px;
-    //   font-weight: 700;
-    //   color: $theme-color;
-    //   position: relative;
-    //   margin-top: 0;
-    //   margin-bottom: 20px;
-    // }
     .section-title {
         color: $theme-color;
         text-transform: capitalize;
@@ -244,9 +251,13 @@ p {
     }
 
     .upper-row {
-        position: relative;
         overflow: hidden;
         margin-bottom: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 1rem;
     }
 
     .job-title,
@@ -258,10 +269,7 @@ p {
         font-weight: 500;
     }
 
-    .time {
-        position: absolute;
-        right: 0;
-        top: 0;
+    .cv-item-time {
         color: $text-grey;
     }
 
@@ -280,10 +288,6 @@ p {
     }
 
     .projects-section {
-        .intro {
-            margin-bottom: 30px;
-        }
-
         .item {
             margin-bottom: 15px;
         }
@@ -297,9 +301,22 @@ p {
     }
 
     .publication-authors {
-        font-style: italic;
-        color: $text-grey;
         margin-bottom: 1px;
+        display: flex;
+        padding-inline-start: 0;
+        list-style: none;
+    }
+
+    .equal-contrib::after {
+        content: "*";
+    }
+
+    .publication-author ~.publication-author::before {
+        content: ', ';
+    }
+
+    .publication-venue {
+        color: $text-grey;
     }
 
     .publications-section {

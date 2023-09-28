@@ -1,4 +1,4 @@
-<div class="contact-container container-block">
+<div class="d-none d-md-block contact-container container-block">
   <ul class="list-unstyled contact-list">
 
     {% if sidebar.email %}
@@ -64,32 +64,32 @@
     {% endif %}
 
     {% if sidebar.twitter %}
-    <li class="twitter"><i class="fab fa-twitter"></i>
+    <li class="twitter"><i class="fab fa-x-twitter"></i>
       <a href="https://twitter.com/{{ sidebar.twitter }}" target="_blank">@{{ sidebar.twitter }}</a>
     </li>
     {% endif %}
 
     {% if sidebar.stack-overflow %}
     <li class="stack-overflow"><i class="fab fa-stack-overflow"></i>
-      <a href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank">{{ sidebar.stack-overflow }}</a>
+      <a href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank">{{ sidebar.stack-overflow
+        }}</a>
     </li>
     {% endif %}
 
-    <div class="sidebar-print">
+  </ul>
+  <ul class="list-unstyled contact-list print-hidden">
 
-      <hr>
+    <hr>
 
-      {% if sidebar.pdf %}
-        <li class="pdf"><i class="fas fa-file-pdf"></i>
-          <a href="{{site.baseurl}}/assets/pdf/{{ sidebar.pdf }}" target="_blank">Resume PDF</a>
-        </li>
-      {% endif %}
+    {% if sidebar.pdf %}
+    <li class="pdf"><i class="fas fa-file-pdf"></i>
+      <a href="{{site.baseurl}}/assets/pdf/{{ sidebar.pdf }}" target="_blank">Resume PDF</a>
+    </li>
+    {% endif %}
 
-      <li class="print"><i class="fas fa-print"></i>
-        <a href="javascript:if(window.print)window.print()">Print</a>
-      </li>
-
-    </div>
+    <li class="print"><i class="fas fa-print"></i>
+      <a href="javascript:if(window.print)window.print()">Print</a>
+    </li>
 
   </ul>
 </div><!--//contact-container-->
