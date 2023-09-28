@@ -22,6 +22,9 @@
           {{ author.name }} {{ author.surname }}
           {% endif %}
         </li>
+        {% unless forloop.last %}
+        <span class="mr-1">,</span>
+        {% endunless %}
         {% endfor %}
       </ul>
       <div class="publication-venue"><span class="font-italic">{{ pub.venue }}</span>, {{ pub.year }}</div>

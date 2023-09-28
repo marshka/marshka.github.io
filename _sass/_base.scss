@@ -303,6 +303,7 @@ p {
     .publication-authors {
         margin-bottom: 1px;
         display: flex;
+        flex-wrap: wrap;
         padding-inline-start: 0;
         list-style: none;
     }
@@ -311,9 +312,9 @@ p {
         content: "*";
     }
 
-    .publication-author ~.publication-author::before {
-        content: ', ';
-    }
+    // .publication-author ~.publication-author::before {
+    //     content: ', ';
+    // }
 
     .publication-venue {
         color: $text-grey;

@@ -4,7 +4,7 @@ sidebar:
     name: Ivan
     surname: Marisca
     tagline: Ph.D. Student
-    avatar: face_thumb_nobg.png  # inside /assets/images/ folder
+    avatar: face_thumb_nobg_zoom.png  # inside /assets/images/ folder
 
     # Sidebar links
     email: ivan.marisca@usi.ch
@@ -36,8 +36,10 @@ sidebar:
           level: Basic
 
 summary: >
-  <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a>, at Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>.
-  My research focuses on problems regarding <strong>irregular spatiotemporal data</strong>, like prediction, imputation, and control on sensor networks using <strong>geometric deep learning</strong>.</p>
+  <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a>, at Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>.</p>
+
+  <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. Currently, I'm studying the problems of <strong>imputation</strong>, <strong>regularization</strong>, and <strong>prediction</strong> of data coming from both physical and virtual <strong>sensor networks</strong>.</p>
+
   <p>I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a>. My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
 
 education:
@@ -160,8 +162,8 @@ awards:
     description: Travel award to attend the NeurIPS conference in New Orleans (US).
     year: Nov 2022
   - type: Scholarship
-    venue: SAPAR
-    description: Scholarship awarded to the 4 best STEM students.
+    venue: National Association SAPAR
+    description: Scholarship awarded to top 4 STEM students.
     year: 2019
   - type: Scholarship
     venue: Politecnico di Milano
@@ -175,7 +177,7 @@ projects:
     end_date: Feb 2023
     image: assets/img/innosuisse.jpeg
     description: >
-      Developing of graph-based methods for multi-site photovoltaic power forecasting, to improve accuracy on portfolio production prediction. The solution is based on novel graph-based AI strategies exploiting existing heterogeneous information and related dependencies. Funded by <a href="https://www.innosuisse.ch/inno/en/home.html" target="_blank" rel="noopener noreferrer">Innosuisse</a>.
+      Developing of graph-based methods for multi-site photovoltaic power forecasting, to improve accuracy on portfolio production prediction. The solution is based on novel graph-based AI strategies exploiting existing heterogeneous information and related dependencies. Joint project in collaboration with <a href="https://www.dxtcommodities.com/" target="_blank" rel="noopener noreferrer">DXT Commodities</a>, funded by <a href="https://www.innosuisse.ch/inno/en/home.html" target="_blank" rel="noopener noreferrer">Innosuisse</a>.
 
 footer: >
     I hereby authorize the use of my personal data in accordance to the GDPR 679/16 - "European regulation on the protection of personal data".
