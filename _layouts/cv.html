@@ -4,7 +4,8 @@
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
 {% include head.html %}
 
 <body>
@@ -36,7 +37,10 @@
         </tfoot>
       </table>
 
-    <div class="cv-footer">Last update: {{ "today" | date: "%b %e, %Y" }}</div>
+      <div class="cv-footer">
+        Last update: {{ "today" | date: "%b %e, %Y" }}
+        <div class="print-only mt-1">{{ site.data.cv.footer }}</div> 
+      </div>
     </div>
   </div>
 
@@ -49,4 +53,3 @@
 </body>
 
 </html>
-

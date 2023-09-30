@@ -49,6 +49,14 @@
       {% if sidebar.twitter %}
       <a href="https://twitter.com/{{ sidebar.twitter }}" data-toggle="tooltip" data-placement="top" title="@{{ sidebar.twitter }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
       {% endif %}
+
+      <div class="mr-1"></div>
+
+      {% if sidebar.pdf %}
+      <a href="{{site.baseurl}}/assets/pdf/{{ sidebar.pdf }}" data-toggle="tooltip" data-placement="top" title="Download pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+      {% endif %}
+  
+      <a href="javascript:if(window.print)window.print()" data-toggle="tooltip" data-placement="top" title="Print"><i class="fas fa-print"></i></a>
     </div><!--//contact-container-->
   </div>
   </div><!--//profile-container-->
