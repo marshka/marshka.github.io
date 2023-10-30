@@ -153,6 +153,10 @@ talks:
     year: Nov 2021
 
 awards:
+  - type: Travel Award
+    venue: NeurIPS
+    description: Travel award to attend the NeurIPS conference in New Orleans (US).
+    year: Dec 2023
   - type: Best Paper Award
     venue: <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> @ NeurIPS
     description: For the paper "Scalable Spatiotemporal Graph Neural Networks".
