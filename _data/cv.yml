@@ -153,6 +153,10 @@ talks:
     year: Nov 2021
 
 awards:
+  - type: Doctoral Mobility
+    venue: Università della Svizzera italiana
+    description: CHF 20’000 (~$23K) to cover the expenses for a 6-month research stay at <a href="https://www.ox.ac.uk">University of Oxford</a> in <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/">Michael Bronstein</a>'s group.
+    year: Dec 2023
   - type: Travel Award
     venue: NeurIPS
     description: Travel award to attend the NeurIPS conference in New Orleans (US).
