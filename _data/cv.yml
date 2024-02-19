@@ -155,7 +155,7 @@ talks:
 awards:
   - type: Doctoral Mobility
     venue: Università della Svizzera italiana
-    description: CHF 20’000 (~$23K) to cover the expenses for a 6-month research stay at <a href="https://www.ox.ac.uk">University of Oxford</a> in <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/">Michael Bronstein</a>'s group.
+    description: CHF 20’000 (≈$23K) to cover the expenses for a 6-month research stay at <a href="https://www.ox.ac.uk">University of Oxford</a> in <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/">Michael Bronstein</a>'s group.
     year: Dec 2023
   - type: Travel Award
     venue: NeurIPS
@@ -171,7 +171,7 @@ awards:
     year: Nov 2022
   - type: Scholarship
     venue: National Association SAPAR
-    description: Scholarship awarded to top 4 STEM students.
+    description: Scholarship awarded to top-4 students in STEM subjects.
     year: 2019
   - type: Scholarship
     venue: Politecnico di Milano
