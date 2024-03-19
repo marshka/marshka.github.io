@@ -10,12 +10,13 @@
             <div class="meta">
                 <div class="upper-row">
                     <div class="cv-item-title">
-                        <strong>{{ course.course }}</strong>, {{ course.class }} at {{ course.where }}
+                        <strong>{{ course.course }}</strong> ({{ course.role }}) <span class="cv-text-altcolor print-only">– {{ course.class }} at {{ course.where }}</span>
                     </div>
                     <div class="cv-item-time">{{ course.start }} — {{ course.end }}</div>
                 </div>
                 <!--//upper-row-->
             </div>
+            <div class="university print-hidden">{{ course.class }} at {{ course.where }}</div>
             <p>{{ course.description }}</p>
         </li>
         <!--//item-->

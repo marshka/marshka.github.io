@@ -10,9 +10,9 @@ sidebar:
     email: ivan.marisca@usi.ch
     # phone:
     place: Lugano, Switzerland
-    citizenship: Italian
-    birthday: November 1995
-    website: marshka.github.io #do not add http://
+    # citizenship: Italian
+    # birthday: November 1995
+    website: marshka.github.io # do not add http://
     linkedin: ivanmarisca
     github: marshka
     # telegram: marshka # add your nickname without '@' sign
@@ -36,20 +36,26 @@ sidebar:
           level: Basic
 
 summary: >
-  <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a>, at Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>.</p>
+  <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>, CH), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. Currently, I'm a visiting researcher at <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a> with Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>.</p>
 
-  <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. Currently, I'm studying the problems of <strong>imputation</strong>, <strong>regularization</strong>, and <strong>prediction</strong> of data coming from both physical and virtual <strong>sensor networks</strong>.</p>
+  <p>I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> (IT). My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
 
-  <p>I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a>. My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
+  <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. I study the problems of <strong>imputation</strong>, <strong>regularization</strong>, and <strong>prediction</strong> of data coming over time from both physical and virtual <strong>sensor networks</strong>.</p>
 
 education:
-  - where: "Università della Svizzera italiana"
+  - where: "Università della Svizzera italiana (USI)"
     what: "Ph.D. Student"
     course: "Informatics"
     url: "https://www.usi.ch"
     start: 2020
     end: "ongoing"
-    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of prof. Cesare Alippi."
+    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of Prof. Cesare Alippi."
+  - where: "University of Oxford"
+    what: "Research visit"
+    url: "https://www.ox.ac.uk/"
+    start: "Mar 2024"
+    end: "Aug 2024"
+    description: "6-month research visit within the group of Prof. <a href='https://www.cs.ox.ac.uk/people/michael.bronstein/' target='_blank' rel='noopener noreferrer'>Michael Bronstein</a>."
   - where: "Politecnico di Milano"
     what: "MSc"
     course: "Computer Science and Engineering"
@@ -58,11 +64,11 @@ education:
     end: 2020
     description: "Master’s degree with honors (110/110L), defending a thesis on machine learning. During the two years of studies, I mostly attended AI-oriented courses."
   - where: "Universitat Politècnica de València"
-    what: "Erasmus"
+    what: "Exchange"
     url: "http://www.upv.es/en"
     start: "Sep 2018"
     end: "Jan 2019"
-    description: "During the semester spent abroad (in Valencia) within the Erasmus program, I attended Spanish and English courses on programming, robotics and artificial intelligence."
+    description: "During the semester spent abroad – in Valencia – within the Erasmus program, I attended Spanish and English courses on programming, robotics and AI."
   - where: "Politecnico di Milano"
     what: "BSc"
     course: "Engineering of Computing Systems"
@@ -75,40 +81,46 @@ education:
     course: "Mathematics"
     start: 2009
     end: 2014
-    description: "High school diploma with a specific focus in mathematics and science at <i>Liceo Scientifico Caminiti</i> in Santa Teresa di Riva (Sicily)."
+    description: "High school diploma with a specific focus in mathematics and science at <i>Liceo Scientifico Caminiti</i> in Santa Teresa di Riva (IT)."
 
 teaching:
   - course: "Advanced Topics in Machine Learning"
+    role: "TA"
     class: "MSc"
     where: "USI"
     start: "Sep 2023" 
     end: "Jan 2024"
-    description: "Teaching assistant, involved in course organization, lecture preparation and students tutoring."
+    description: "Teaching assistant, involved in course organization, lecture preparation and student tutoring."
   - course: "Graph Deep Learning"
+    role: "TA"
     class: "MSc"
     where: "USI"
     start: "Feb 2023" 
     end: "Jun 2023"
     description: "Lectures design and students tutoring on team projects."
   - course: "Advanced Topics in Machine Learning"
+    role: "TA"
     class: "MSc"
     where: "USI"
     start: "Sep 2022" 
     end: "Jan 2023"
     description: "Students tutoring for projects on reproducibility."
   - course: "Graph Deep Learning"
+    role: "TA"
     class: "MSc"
     where: "USI"
     start: "Feb 2022" 
     end: "Jun 2022"
     description: "I gave a lecture on Spatiotemporal Graph Neural Networks and tutored students on projects."
   - course: "Introduzione all’Intelligenza Artificiale e ML"
+    role: "TA"
     class: "MSc"
     where: "USI"
     start: "Sep 2021" 
     end: "Jan 2022"
-    description: "Course on AI and ML delivered in italian for the training of high school teachers qualified to teach computer science as a subject."
+    description: "Course on AI and ML delivered in Italian for high school teachers."
   - course: "Machine Learning"
+    role: "TA"
     class: "BSc"
     where: "USI"
     start: "Feb 2021" 
@@ -123,17 +135,21 @@ theses:
     university: USI
 
 talks:
+  - type: Reading group presentation
+    venue: TGL reading group (Virtual)
+    description: Invited to present the paper <a href="https://arxiv.org/abs/2302.04071" target="_blank" rel="noopener noreferrer">Taming Local Effects in Graph-based Spatiotemporal Forecasting</a> at the <a href="https://www.cs.mcgill.ca/~shuang43/rg.html" target="_blank" rel="noopener noreferrer">Temporal Graph Learning Reading Group</a>. (<a href="https://www.youtube.com/watch?v=DMZ9ARAl_Bs" target="_blank" rel="noopener noreferrer">📹 Video</a>)
+    year: Feb 2024
   - type: Tutorial
     venue: ECML/PKDD (Turin)
-    description: Presentation of the tutorial <a href="https://gmlg.ch/tutorials/graph-based-processing/ecml-2023">Graph Deep Learning for Spatiotemporal Time Series</a> with colleagues Daniele Zambon and Andrea Cini.
+    description: Presentation of the tutorial <a href="https://gmlg.ch/tutorials/graph-based-processing/ecml-2023" target="_blank" rel="noopener noreferrer">Graph Deep Learning for Spatiotemporal Time Series</a> with colleagues Daniele Zambon and Andrea Cini.
     year: Sep 2023
   - type: Reading group presentation
     venue: TGL reading group (Virtual)
-    description: Invited to present the paper <a href="https://arxiv.org/abs/2209.06520">Scalable Spatiotemporal Graph Neural Networks</a> at the <a href="https://www.cs.mcgill.ca/~shuang43/rg.html">Temporal Graph Learning Reading Group</a>.
+    description: Invited to present the paper <a href="https://arxiv.org/abs/2209.06520" target="_blank" rel="noopener noreferrer">Scalable Spatiotemporal Graph Neural Networks</a> at the <a href="https://www.cs.mcgill.ca/~shuang43/rg.html" target="_blank" rel="noopener noreferrer">Temporal Graph Learning Reading Group</a>.
     year: Apr 2023
   - type: Spotlight presentation
     venue: TGL Workshop (New Orleans)
-    description: The <a href="https://sites.google.com/view/tglworkshop2022">Temporal Graph Learning Workshop</a> at NeurIPS 2022.
+    description: The <a href="https://sites.google.com/view/tglworkshop2022" target="_blank" rel="noopener noreferrer">Temporal Graph Learning Workshop</a> at NeurIPS 2022.
     year: Dec 2022
   - type: Poster presentation
     venue: NeurIPS (New Orleans)
@@ -141,7 +157,7 @@ talks:
     year: Nov 2022
   - type: Invited talk
     venue: Baker Hughes (Virtual)
-    description: Invited to give a webinar on time series imputation.
+    description: Invited to give a webinar on time series imputation with colleague Andrea Cini.
     year: Jul 2022
   - type: Poster presentation
     venue: ICLR (Virtual)
@@ -155,7 +171,7 @@ talks:
 awards:
   - type: Doctoral Mobility
     venue: Università della Svizzera italiana
-    description: CHF 20’000 (≈$23K) to cover the expenses for a 6-month research stay at <a href="https://www.ox.ac.uk">University of Oxford</a> in <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/">Michael Bronstein</a>'s group.
+    description: CHF 20’000 (≈$23K) to cover the expenses for a 6-month research stay at <a href="https://www.ox.ac.uk">University of Oxford</a>.
     year: Dec 2023
   - type: Travel Award
     venue: NeurIPS
@@ -171,7 +187,7 @@ awards:
     year: Nov 2022
   - type: Scholarship
     venue: National Association SAPAR
-    description: Scholarship awarded to top-4 students in STEM subjects.
+    description: Scholarship awarded to the top-4 students in STEM subjects.
     year: 2019
   - type: Scholarship
     venue: Politecnico di Milano

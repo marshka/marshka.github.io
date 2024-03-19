@@ -16,9 +16,10 @@
         font-size: 16pt;
     }
 
-    p {
-        line-height: 1.25;
-        margin-bottom: .5rem;
+    p,
+    .cv-list p {
+        line-height: 1.2;
+        margin-bottom: .4rem;
     }
 
     .wrapper {
@@ -27,6 +28,7 @@
         padding: 0 $page-margin-print;
         grid-template-columns: repeat(12, 1fr) !important;
         background: none;
+        margin-bottom: 0;
     }
 
     footer {
@@ -38,7 +40,7 @@
     }
 
     .print-only {
-        display: block;
+        display: unset;
     }
 
     li {
@@ -74,9 +76,21 @@
         background: #fff;
         padding: 0;
 
-        .company,
-        .university {
-            margin-bottom: .5rem;
+        .section {
+            margin-bottom: 1.5rem;
+        }
+
+        .experiences-section,
+        .educations-section,
+        .publications-section {
+            .item {
+                margin-bottom: .4rem;
+
+                .company,
+                .university {
+                    margin-bottom: .075rem;
+                }
+            }
         }
     }
 
