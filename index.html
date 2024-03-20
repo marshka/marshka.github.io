@@ -6,22 +6,25 @@ layout: page
 <!-- ABOUT -->
 <div class="pb-0 pb-sm-2">
     <h1 class="title title--h1 first-title title__separate">About Me</h1>
-    <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a>, at Università della Svizzera italiana (<a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a>), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a>. My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
+    {{ site.data.cv.summary.about | markdownify }}
 </div>
 <!-- What -->
 <div class="box-inner pb-0">
     <h2 class="title title--h3">What I'm Doing</h2>
-    <p>My research focuses on problems regarding <strong>irregular time series on irregular structures</strong>, like <span class="badge badge-pill badge-primary">prediction</span> <span class="badge badge-pill badge-primary">imputation</span> <span class="badge badge-pill badge-primary">control</span> over <span class="badge badge-pill badge-primary">sensor networks</span> <span class="badge badge-pill badge-primary">manifolds</span>.</p>
+    {{ site.data.cv.summary.research | markdownify }}
+    <!-- <p>My research focuses on problems regarding <strong>irregular time series on irregular structures</strong>, like <span class="badge badge-pill badge-primary">prediction</span> <span class="badge badge-pill badge-primary">imputation</span> <span class="badge badge-pill badge-primary">control</span> over <span class="badge badge-pill badge-primary">sensor networks</span> <span class="badge badge-pill badge-primary">manifolds</span>.</p> -->
     <p>You can find a list of my publications <a href="publications.html">here</a>.</p>
     <div class="row">
         <!-- Case Item -->
         <div class="col-12 col-lg-6">
             <div class="case-item box box__second">
                 <svg class="marshkicon case-item__icon">
-                    <use href="#marshkicon-sensor-network" /></svg>
+                    <use href="#marshkicon-sensor-network" />
+                </svg>
                 <div>
-                    <h3 class="title title--h5">Spatio-temporal data processing</h3>
-                    <p class="case-item__caption">My studies focus on analysis of multivariate time series, like sensor network streams.</p>
+                    <h3 class="title title--h5">Spatiotemporal data</h3>
+                    <p class="case-item__caption">My studies focus on data spanning the temporal and spatial dimensions.
+                    </p>
                 </div>
             </div>
         </div>
@@ -29,10 +32,23 @@ layout: page
         <div class="col-12 col-lg-6">
             <div class="case-item box box__second">
                 <svg class="marshkicon case-item__icon">
-                    <use href="#marshkicon-graph" /></svg>
+                    <use href="#marshkicon-interpolation" />
+                </svg>
+                <div>
+                    <h3 class="title title--h5">Irregular data</h3>
+                    <p class="case-item__caption">Temporal and spatial irregularities pose an intriguing challenge.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Case Item -->
+        <div class="col-12 col-lg-6">
+            <div class="case-item box box__second">
+                <svg class="marshkicon case-item__icon">
+                    <use href="#marshkicon-graph" />
+                </svg>
                 <div>
                     <h3 class="title title--h5">Graph Neural Networks</h3>
-                    <p class="case-item__caption">I study deep learning solutions, with a particular focus on GNNs.</p>
+                    <p class="case-item__caption">My focus is on graph deep learning &ndash; GNNs in particular.</p>
                 </div>
             </div>
         </div>
@@ -40,21 +56,13 @@ layout: page
         <div class="col-12 col-lg-6">
             <div class="case-item box box__second">
                 <svg class="marshkicon case-item__icon">
-                    <use href="#marshkicon-interpolation" /></svg>
-                <div>
-                    <h3 class="title title--h5">Data Challenges</h3>
-                    <p class="case-item__caption">I'm interested in data-related issues, like dealing with missing values and irregularities in the data stream.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Case Item -->
-        <div class="col-12 col-lg-6">
-            <div class="case-item box box__second">
-                <svg class="marshkicon case-item__icon">
-                    <use href="#marshkicon-world" /></svg>
+                    <use href="#marshkicon-world" />
+                </svg>
                 <div>
                     <h3 class="title title--h5">Real-world applications</h3>
-                    <p class="case-item__caption">I love to see how developed scientific methods can be game-changers in real-world cases (see <a href="resume.html#sec-industry-projects">industry projects</a> section).</p>
+                    <p class="case-item__caption">I love to see how my research can be game-changer in practical
+                        applications.</p>
+                    <!--  (see <a href="resume.html#sec-industry-projects">industry projects</a>) -->
                 </div>
             </div>
         </div>
@@ -63,22 +71,37 @@ layout: page
 <!-- Projects -->
 <div class="box-inner box-inner--white box-inner--rounded">
     <h2 class="title title--h3">Open Source Projects</h2>
-    <p>I strongly believe in the worldwide accessibility of science. As such, I make the software I develop for my research publicly available (whenever possible) through <a href="https://github.com/marshka" target="_blank" rel="noopener noreferrer">my GitHub page</a>. You can also find the code related to my <a href="publications.html">publications</a> on the <a href="https://github.com/Graph-Machine-Learning-Group" target="_blank" rel="noopener noreferrer">GitHub page of Graph Machine Learning Group</a>.</p>
-    <p>We recently released a library on Spatiotemporal Graph Neural Networks!</p>
-    <!-- img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/TorchSpatiotemporal/tsl?style=social" -->
+    <p>I strongly believe in the worldwide accessibility of science. As such, I make the software I develop for my
+        research publicly available (whenever possible) through <a href="https://github.com/marshka" target="_blank"
+            rel="noopener noreferrer">my GitHub page</a>. You can also find the code related to my <a
+            href="publications.html">publications</a> on the <a href="https://github.com/Graph-Machine-Learning-Group"
+            target="_blank" rel="noopener noreferrer">GitHub page of Graph Machine Learning Group</a>.</p>
+    <!-- <p>We recently released a library on Spatiotemporal Graph Neural Networks!</p> -->
     <div class="row">
         <!-- TSL -->
         <div class="col-12">
             <div class="case-item box box__second">
                 <img class="case-item__icon" style="width: 4rem; height: 4rem;" src="assets/img/tsl_logo.svg" alt="" />
                 <div>
-                    <h3 class="title title--h5"><a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank">Torch Spatiotemporal</a></h3>
-                    <p class="case-item__caption">Torch Spatiotemporal (<strong>TSL</strong>) is a library built upon <a href="https://pytorch.org/">PyTorch</a> and <a href="https://github.com/pyg-team/pytorch_geometric/">PyG</a> for neural spatiotemporal data processing, with a focus on Graph Neural Networks.</p>
+                    <h3 class="title title--h5"><a href="https://github.com/TorchSpatiotemporal/tsl"
+                            target="_blank">Torch Spatiotemporal</a></h3>
+                    <p class="case-item__caption">Torch Spatiotemporal (<strong>TSL</strong>) is a library built upon <a
+                            href="https://pytorch.org/">PyTorch</a> and <a
+                            href="https://github.com/pyg-team/pytorch_geometric/">PyG</a> for neural spatiotemporal data
+                        processing, with a focus on Graph Neural Networks.</p>
                     <div class="case-item__links">
-                        <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank"><svg class="marshkicon text-icon">
-                                <use href="#marshkicon-github" /></svg>GitHub</a>
-                        <a href="https://torch-spatiotemporal.readthedocs.io/en/latest/" target="_blank"><svg class="marshkicon text-icon">
-                                <use href="#marshkicon-rtd" /></svg>Documentation</a>
+                        <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank"><svg
+                                class="marshkicon text-icon">
+                                <use href="#marshkicon-github" />
+                            </svg>GitHub</a>
+                        <a href="https://github.com/TorchSpatiotemporal/tsl" target="_blank"><svg
+                                class="marshkicon text-icon">
+                                <use href="#marshkicon-star" />
+                            </svg><span class="gh-star-counts" data-repo="TorchSpatiotemporal/tsl"></span> Stars</a>
+                        <a href="https://torch-spatiotemporal.readthedocs.io/en/latest/" target="_blank"><svg
+                                class="marshkicon text-icon">
+                                <use href="#marshkicon-rtd" />
+                            </svg>Documentation</a>
                     </div>
                 </div>
             </div>

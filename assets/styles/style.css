@@ -1652,6 +1652,10 @@ img.case-item__icon {
     color: var(--primary-color);
 }
 
+.marshkicon {
+    vertical-align: text-top;
+}
+
 /* -----------------------------------------------------------------
     - Publications
 ----------------------------------------------------------------- */

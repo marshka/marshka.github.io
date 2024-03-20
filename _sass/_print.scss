@@ -36,11 +36,7 @@
     }
 
     .print-hidden {
-        display: none;
-    }
-
-    .print-only {
-        display: unset;
+        display: none !important;
     }
 
     li {
@@ -141,6 +137,14 @@
         right: $page-margin-print;
         left: $page-margin-print;
         bottom: 0;
+    }
+
+}
+
+@media not print {
+
+    .print-only {
+        display: none !important;
     }
 
 }

@@ -9,6 +9,7 @@ abstract: "Spatiotemporal graph neural networks have shown to be effective in ti
 categories:
     - prediction
 link: https://arxiv.org/abs/2302.04071
+code: https://github.com/Graph-Machine-Learning-Group/taming-local-effects-stgnns
 venue: NeurIPS 2023
 thumbnail: 2302.04071.jpg
 layout: abstract

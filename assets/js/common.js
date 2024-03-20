@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     'use strict';
 
@@ -7,11 +7,11 @@ $(document).ready(function() {
     -------------------------------------------------------------------*/
 
     const togglers = document.getElementsByClassName("toggle-dark-mode");
-    [].forEach.call(togglers, btn => btn.addEventListener("click", function() {
+    [].forEach.call(togglers, btn => btn.addEventListener("click", function () {
         darkTheme.disabled = !darkTheme.disabled;
         localStorage.setItem("theme", darkTheme.disabled ? 'light' : 'dark');
     }));
-    
+
     /*-----------------------------------------------------------------
       Sticky sidebar
     -------------------------------------------------------------------*/
@@ -23,10 +23,10 @@ $(document).ready(function() {
 
         // bootstrap col position
         $('.sticky-column')
-            .on('sticky_kit:bottom', function(e) {
+            .on('sticky_kit:bottom', function (e) {
                 $(this).parent().css('position', 'static');
             })
-            .on('sticky_kit:unbottom', function(e) {
+            .on('sticky_kit:unbottom', function (e) {
                 $(this).parent().css('position', 'relative');
             });
     };
@@ -59,10 +59,10 @@ $(document).ready(function() {
 
     function debounce(func, wait, immediate) {
         var timeout;
-        return function() {
+        return function () {
             var context = this,
                 args = arguments;
-            var later = function() {
+            var later = function () {
                 timeout = null;
                 if (!immediate) func.apply(context, args);
             };
@@ -73,7 +73,7 @@ $(document).ready(function() {
         };
     };
 
-    $(window).resize(debounce(function() {
+    $(window).resize(debounce(function () {
         windowSize();
         $(document.body).trigger("sticky_kit:recalc");
         if (windowWidth < screen) {
@@ -87,7 +87,7 @@ $(document).ready(function() {
       Tooltip
     -------------------------------------------------------------------*/
 
-    $(function() {
+    $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
       Switch categories & Filter mobile
     -------------------------------------------------------------------*/
 
-    $('.select').on('click', '.placeholder', function() {
+    $('.select').on('click', '.placeholder', function () {
         var parent = $(this).closest('.select');
         if (!parent.hasClass('is-open')) {
             parent.addClass('is-open');
@@ -104,7 +104,7 @@ $(document).ready(function() {
         } else {
             parent.removeClass('is-open');
         }
-    }).on('click', 'ul>li', function() {
+    }).on('click', 'ul>li', function () {
         var parent = $(this).closest('.select');
         parent.removeClass('is-open').find('.placeholder').text($(this).text());
         parent.find('input[type=hidden]').attr('value', $(this).attr('data-value'));
@@ -148,7 +148,7 @@ $(document).ready(function() {
         }
     });
 
-    $portfolioMasonry.imagesLoaded().progress(function() {
+    $portfolioMasonry.imagesLoaded().progress(function () {
         $portfolioMasonry.isotope({
             columnWidth: '.gallery-grid__item',
             gutter: '.gutter-sizer',
@@ -191,5 +191,27 @@ $(document).ready(function() {
 
     var $someImages = $('img.cover');
     objectFitImages($someImages);
+
+
+    /*-----------------------------------------------------------------
+      GitHub stars
+    -------------------------------------------------------------------*/
+
+    const starsElems = $('.gh-star-counts');
+    if (starsElems.length) {
+        async function fetchStars(reponame) {
+            const response = await fetch('https://api.github.com/repos/' + reponame);
+            const res = await response.json();
+            return res.stargazers_count;
+        }
+
+        starsElems.each(function () {
+            fetchStars($(this).data('repo')).then(stars => {
+                $(this).text(stars);
+            });
+        });
+    }
+
+    // 
 
 });
