@@ -39,7 +39,7 @@
 
       <div class="cv-footer">
         Last update: {{ "today" | date: "%b %e, %Y" }}
-        <div class="print-only d-block mt-1">{{ site.data.cv.footer }}</div> 
+        <div class="print-only d-block mt-1">{{ site.data.cv.footer }}</div>
       </div>
     </div>
   </div>
@@ -49,6 +49,15 @@
   <script src="{{ 'assets/js/jquery-3.4.1.min.js' | absolute_url }}"></script>
   <script src="{{ 'assets/js/plugins.min.js' | absolute_url }}"></script>
   <script src="{{ 'assets/js/common.js' | absolute_url }}"></script>
+  <script>
+    const tempTitle = document.title;
+    window.addEventListener('beforeprint', () => {
+      document.title = "{{ site.data.cv.sidebar.name | downcase }}_{{ site.data.cv.sidebar.surname | downcase }}_cv";
+    });
+    window.addEventListener('afterprint', () => {
+      document.title = tempTitle;
+    });
+  </script>
 
 </body>
 
