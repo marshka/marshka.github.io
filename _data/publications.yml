@@ -1,8 +1,8 @@
 - title: Graph-based Forecasting with Missing Data through Spatiotemporal Downsampling
   links:
     paper: https://arxiv.org/abs/2402.10634
-  venue: Preprint
-  short_venue: Preprint
+  venue: International Conference on Machine Learning
+  short_venue: ICML
   year: 2024
   authors:
     - me

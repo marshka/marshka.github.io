@@ -8,7 +8,7 @@ abstract: Given a set of synchronous time series, each associated with a sensor-
 categories:
     - prediction
 link: https://arxiv.org/abs/2402.10634
-venue: Preprint
+venue: ICML 2024
 thumbnail: 2402.10634.jpg
 layout: abstract
 order: 6
