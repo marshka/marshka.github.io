@@ -44,12 +44,89 @@
     <h3>Talks</h3>
     {% assign talks = site.data.cv.talks %}
     <ul class="cv-list">
-        {% for talk in talks %}
+        <!-- Invited talks -->
+        {% for talk in talks.invited %}
         <li class="item">
             <div class="meta">
                 <div class="upper-row">
                     <div class="cv-item-title">
-                        <strong>{{ talk.type }}</strong> at {{ talk.venue }}
+                        <strong>Invited talk</strong> at {{ talk.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ talk.year }}</div>
+                </div>
+                <!--//upper-row-->
+            </div>
+            {% if talk.description %}
+            <p>{{ talk.description }}</p>
+            {% endif %}
+        </li>
+        <!--//item-->
+        {% endfor %}
+        <hr class="hr my-2" />
+        <!-- Spotlight -->
+        {% for talk in talks.spotlight %}
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Spotlight talk</strong> at {{ talk.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ talk.year }}</div>
+                </div>
+                <!--//upper-row-->
+            </div>
+            {% if talk.description %}
+            <p>{{ talk.description }}</p>
+            {% endif %}
+        </li>
+        <!--//item-->
+        {% endfor %}
+        <hr class="hr my-2" />
+        <!-- Reading group -->
+        {% for talk in talks.reading_group %}
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Reading group presentation</strong> at {{ talk.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ talk.year }}</div>
+                </div>
+                <!--//upper-row-->
+            </div>
+            {% if talk.description %}
+            <p>{{ talk.description }}</p>
+            {% endif %}
+        </li>
+        <!--//item-->
+        {% endfor %}
+        <hr class="hr my-2" />
+        <!-- Poster presentation -->
+        {% for talk in talks.poster %}
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Poster presentation</strong> at {{ talk.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ talk.year }}</div>
+                </div>
+                <!--//upper-row-->
+            </div>
+            {% if talk.description %}
+            <p>{{ talk.description }}</p>
+            {% endif %}
+        </li>
+        <!--//item-->
+        {% endfor %}
+        <hr class="hr my-2" />
+        <!-- Abstract presentation -->
+        {% for talk in talks.abstract %}
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Abstract presentation</strong> at {{ talk.venue }}
                     </div>
                     <div class="cv-item-time">{{ talk.year }}</div>
                 </div>
@@ -82,6 +159,32 @@
         </li>
         <!--//item-->
         {% endfor %}
+    </ul>
+    <h3>Program Committee Member</h3>
+    {% assign reviewer = site.data.cv.reviewer %}
+    <ul class="cv-list">
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Journals</strong>
+                    </div>
+                </div>
+                <!--//upper-row-->
+                <p>{{ reviewer.journals | join: " — " }}</p>
+            </div>
+        </li>
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Conferences</strong>
+                    </div>
+                </div>
+                <!--//upper-row-->
+                <p>{{ reviewer.conferences | join: " — " }}</p>
+            </div>
+        </li>
     </ul>
 </section>
 <!--//section-->
