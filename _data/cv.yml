@@ -37,12 +37,12 @@ sidebar:
 
 summary:
   about: >
-    <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and <a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a> - Università della Svizzera italiana (Switzerland), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. Additionally, I am enrolled in the <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS</a> Ph.D. program under the joint supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a> and Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>. I am currently on a research visit at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a>, collaborating with Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>.</p>
+    <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and <a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a> - Università della Svizzera italiana (Switzerland), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. Additionally, I am enrolled in the <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS</a> Ph.D. program under the joint supervision of Prof. Alippi and Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>. I am currently on a research visit at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a>, collaborating with Prof. Bronstein.</p>
 
     <p>Previously, I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> (IT). My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
 
   research: >
-    <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. I'm interested in the applications of <strong>graph-based</strong> methods in problems regarding data coming from <strong>sensor networks</strong>, like <strong>imputation</strong>, <strong>regularization</strong>, and <strong>prediction</strong> of observations.</p>
+    <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. I'm interested in the application of <strong>graph-based</strong> methods in problems regarding data coming from <strong>sensor networks</strong>, like <strong>imputation</strong>, <strong>regularization</strong>, and <strong>prediction</strong> of observations.</p>
 
 education:
   - where: "Università della Svizzera italiana (USI)"
@@ -50,14 +50,14 @@ education:
     course: "Informatics"
     url: "https://www.usi.ch"
     start: 2020
-    end: "ongoing"
-    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA at USI Università della Svizzera Italiana, under the supervision of Prof. Cesare Alippi."
+    end: "Ongoing"
+    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA and USI Università della Svizzera Italiana, under the supervision of Prof. Cesare Alippi."
   - where: "University of Oxford"
     what: "Research visit"
     url: "https://www.ox.ac.uk/"
     start: "Mar 2024"
     end: "Aug 2024"
-    description: "6-month research visit within the group of Prof. <a href='https://www.cs.ox.ac.uk/people/michael.bronstein/' target='_blank' rel='noopener noreferrer'>Michael Bronstein</a>."
+    description: "6-month research visit within the group of Prof. Michael Bronstein."
   - where: "Politecnico di Milano"
     what: "MSc"
     course: "Computer Science and Engineering"
@@ -134,17 +134,17 @@ theses:
     title: "State Initialization in Recurrent Neural Networks."
     year: Ongoing
     degree: MSc
-    university: University of Bologna
+    university: USI and Politecnico di Milano
   - name: Simone Mugnai
-    title: "Graph-based Imputation and Smoothing for Forecasting with Missing Data"
+    title: "Graph-based Imputation and Smoothing for Forecasting with Missing Data."
     year: 2024
     degree: MSc
-    university: University of Bologna
+    university: USI and University of Bologna
   - name: Marco Latella
-    title: "Graph Representation Learning for Multi-site Photovoltaic Energy Production"
+    title: "Graph Representation Learning for Multi-site Photovoltaic Energy Production."
     year: 2022
     degree: MSc
-    university: USI
+    university: USI and University of Milano-Bicocca
 
 talks:
   invited:
