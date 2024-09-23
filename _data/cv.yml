@@ -37,7 +37,7 @@ sidebar:
 
 summary:
   about: >
-    <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and <a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a> - Università della Svizzera italiana (Switzerland), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. Additionally, I am enrolled in the <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS</a> Ph.D. program under the joint supervision of Prof. Alippi and Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>. I am currently on a research visit at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a>, collaborating with Prof. Bronstein.</p>
+    <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and <a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a> - Università della Svizzera italiana (Switzerland), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. Additionally, I am enrolled in the <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS</a> Ph.D. program under the joint supervision of Prof. Alippi and Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>. I have been a visiting researcher at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a> with Prof. Bronstein.</p>
 
     <p>Previously, I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> (IT). My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
 
@@ -90,6 +90,13 @@ teaching:
     role: "TA"
     class: "MSc"
     where: "USI"
+    start: "Sep 2024" 
+    end: "Jan 2025"
+    description: "Guest lecturer, teaching assistant, and tutor for team projects."
+  - course: "Advanced Topics in Machine Learning"
+    role: "TA"
+    class: "MSc"
+    where: "USI"
     start: "Sep 2023" 
     end: "Jan 2024"
     description: "Teaching assistant, involved in course organization, lecture preparation and student tutoring."
@@ -131,8 +138,8 @@ teaching:
 
 theses:
   - name: Valentina Moretti
-    title: "State Initialization in Recurrent Neural Networks."
-    year: Ongoing
+    title: "Quasi-stateful RNNs with Truncated Back-propagation Through Time."
+    year: 2024
     degree: MSc
     university: USI and Politecnico di Milano
   - name: Simone Mugnai
