@@ -167,8 +167,12 @@ talks:
       year: Dec 2022
   tutorial:
     - type: Tutorial
+      venue: LoG Conference (Virtual & Siena, Italy)
+      description: Presentation of the tutorial <a href="https://gmlg.ch/tutorials/graph-based-processing/log-2024" target="_blank" rel="noopener noreferrer">Graph Deep Learning for Time Series Processing</a> with Andrea Cini and Daniele Zambon. (<a href="https://www.youtube.com/watch?v=fU3PNKDL5OY" target="_blank" rel="noopener noreferrer">📹 Video</a>)
+      year: Nov 2024
+    - type: Tutorial
       venue: ECML/PKDD (Turin)
-      description: Presentation of the tutorial <a href="https://gmlg.ch/tutorials/graph-based-processing/ecml-2023" target="_blank" rel="noopener noreferrer">Graph Deep Learning for Spatiotemporal Time Series</a> with colleagues Daniele Zambon and Andrea Cini.
+      description: Presentation of the tutorial <a href="https://gmlg.ch/tutorials/graph-based-processing/ecml-2023" target="_blank" rel="noopener noreferrer">Graph Deep Learning for Spatiotemporal Time Series</a> with Andrea Cini and Daniele Zambon.
       year: Sep 2023
   reading_group:
     - venue: TGL reading group (Virtual)

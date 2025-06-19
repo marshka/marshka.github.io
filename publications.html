@@ -32,7 +32,7 @@ layout: page
 
             {% assign publications = site.publications | sort: "order" | reverse %}
             {% for pub in publications %}
-            <div class="gallery-grid__item {% for cat in pub.categories %}category-{{cat}}{% endfor %}">
+            <div class="gallery-grid__item {% for cat in pub.categories %}category-{{cat}} {% endfor %}">
                 <a href="{{ pub.url }}">
                     <div class="gallery-grid__image-wrap">
                         <img class="gallery-grid__image cover lazyload" src="assets/img/paper_thumbs/{{pub.thumbnail}}" alt="" />
