@@ -3,7 +3,7 @@ sidebar:
     # Profile information
     name: Ivan
     surname: Marisca
-    tagline: Ph.D. Student
+    tagline: CTO at GraphSight<br>Researcher at USI
     avatar: face_thumb_nobg_zoom.png  # inside /assets/images/ folder
 
     # Sidebar links
@@ -37,21 +37,19 @@ sidebar:
 
 summary:
   about: >
-    <p>I am a Ph.D. student at the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a>, within the Swiss AI lab <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and <a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">USI</a> - Università della Svizzera italiana (Switzerland), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. Additionally, I am enrolled in the <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS</a> Ph.D. program under the joint supervision of Prof. Alippi and Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>. I have been a visiting researcher at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a> with Prof. Bronstein.</p>
-
-    <p>Previously, I obtained BSc (2017) and MSc (2020) degrees in Computer Science and Engineering at <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> (IT). My master thesis project has been supervised by Prof. <a href="https://gatti.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Nicola Gatti</a>.</p>
+    <p>I am CTO of <a href="https://graphsight.ai/" target="_blank" rel="noopener noreferrer">GraphSight</a>, a Swiss startup that provides AI-powered graph-based forecasts for renewable energy systems. I recently completed my Ph.D. in the <a href="https://gmlg.ch/" target="_blank" rel="noopener noreferrer">Graph Machine Learning Group</a> at <a href="https://www.idsia.ch/" target="_blank" rel="noopener noreferrer">IDSIA</a> and <a href="https://www.usi.ch/en" target="_blank" rel="noopener noreferrer">Università della Svizzera italiana (USI)</a> in Lugano (Switzerland), under the supervision of Prof. <a href="https://alippi.faculty.polimi.it/" target="_blank" rel="noopener noreferrer">Cesare Alippi</a>. I was also part of the <a href="https://ellis.eu/" target="_blank" rel="noopener noreferrer">ELLIS</a> Ph.D. program, jointly supervised by Prof. Alippi and Prof. <a href="https://www.cs.ox.ac.uk/people/michael.bronstein/" target="_blank" rel="noopener noreferrer">Michael Bronstein</a>. Previously, I earned my BSc (2017) and MSc (2020) in Computer Science and Engineering from <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> (Italy). I have been a visiting researcher at the <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">University of Oxford</a> with Prof. Bronstein and at <a href="https://www.uit.no/" target="_blank" rel="noopener noreferrer">UiT The Arctic University of Norway</a> (Tromsø) with Prof. <a href="https://sites.google.com/view/filippombianchi/" target="_blank" rel="noopener noreferrer">Filippo Maria Bianchi</a>.</p>
 
   research: >
-    <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. I'm interested in the application of <strong>graph-based</strong> methods in problems regarding data coming from <strong>sensor networks</strong>, like <strong>imputation</strong>, <strong>regularization</strong>, and <strong>prediction</strong> of observations.</p>
+    <p>My research focuses on <strong>graph deep learning</strong> for <strong>irregular spatiotemporal data</strong>. I'm interested in the application of <strong>graph-based</strong> methods in problems regarding data coming from <strong>sensor networks</strong>, like <strong>imputation</strong>, <strong>filtering</strong>, and <strong>prediction</strong> of irregularly sampled observations.</p>
 
 education:
   - where: "Università della Svizzera italiana (USI)"
-    what: "Ph.D. Student"
+    what: "Ph.D."
     course: "Informatics"
     url: "https://www.usi.ch"
     start: 2020
-    end: "Ongoing"
-    description: "Currently, I am a Ph.D. Student at the Swiss AI Lab IDSIA and USI Università della Svizzera Italiana, under the supervision of Prof. Cesare Alippi."
+    end: 2025
+    description: "Ph.D. graduate from IDSIA and Università della Svizzera italiana (USI), where I was supervised by Prof. Cesare Alippi."
   - where: "University of Oxford"
     what: "Research visit"
     url: "https://www.ox.ac.uk/"
@@ -227,6 +225,7 @@ awards:
 
 reviewer:
   journals:
+    - Journal of Machine Learning Research (JMLR)
     - IEEE Transactions on Neural Networks (TNNLS)
     - Neural Networks
   conferences:

@@ -82,6 +82,25 @@
         <!--//item-->
         {% endfor %}
         <hr class="hr my-2" />
+        <!-- Tutorial -->
+        {% for talk in talks.tutorial %}
+        <li class="item">
+            <div class="meta">
+                <div class="upper-row">
+                    <div class="cv-item-title">
+                        <strong>Tutorial</strong> at {{ talk.venue }}
+                    </div>
+                    <div class="cv-item-time">{{ talk.year }}</div>
+                </div>
+                <!--//upper-row-->
+            </div>
+            {% if talk.description %}
+            <p>{{ talk.description }}</p>
+            {% endif %}
+        </li>
+        <!--//item-->
+        {% endfor %}
+        <hr class="hr my-2" />
         <!-- Reading group -->
         {% for talk in talks.reading_group %}
         <li class="item">
@@ -100,10 +119,10 @@
         </li>
         <!--//item-->
         {% endfor %}
-        <hr class="hr my-2" />
+        <hr class="hr my-2 print-hidden" />
         <!-- Poster presentation -->
         {% for talk in talks.poster %}
-        <li class="item">
+        <li class="item print-hidden">
             <div class="meta">
                 <div class="upper-row">
                     <div class="cv-item-title">
@@ -119,10 +138,10 @@
         </li>
         <!--//item-->
         {% endfor %}
-        <hr class="hr my-2" />
+        <hr class="hr my-2 print-hidden" />
         <!-- Abstract presentation -->
         {% for talk in talks.abstract %}
-        <li class="item">
+        <li class="item print-hidden">
             <div class="meta">
                 <div class="upper-row">
                     <div class="cv-item-title">

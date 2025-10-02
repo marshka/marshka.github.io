@@ -11,8 +11,8 @@ categories:
     - prediction
     - analysis
 link: https://arxiv.org/abs/2506.15507
-code: https://github.com/marshka/hdtts
-venue: Preprint
+# code: https://github.com/marshka/
+venue: NeurIPS 2025
 thumbnail: 2506.15507.webp
 layout: abstract
 order: 8

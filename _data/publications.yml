@@ -1,8 +1,8 @@
 - title: "Over-squashing in Spatiotemporal Graph Neural Networks"
   links:
     paper: https://arxiv.org/abs/2506.15507
-  venue: Preprint
-  short_venue: Preprint
+  venue: To appear in Advances in Neural Information Processing Systems
+  short_venue: NeurIPS
   year: 2025
   thumbnail: 2506.15507.webp
   authors:
