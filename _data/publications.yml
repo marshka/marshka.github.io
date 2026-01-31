@@ -1,3 +1,62 @@
+- title: "What Matters in Deep Learning for Time Series Forecasting?"
+  links:
+    paper: https://arxiv.org/abs/2512.22702
+  venue: Preprint
+  short_venue: Preprint
+  year: 2025
+  thumbnail: 2512.22702.webp
+  authors:
+    - name: Valentina
+      surname: Moretti
+    - name: Andrea
+      surname: Cini
+    - me
+    - name: Cesare
+      surname: Alippi
+  keywords:
+    - forecasting
+    - benchmark
+  abstract: >
+    Deep learning models have grown increasingly popular in time series applications. However, the large quantity of newly proposed architectures, together with often contradictory empirical results, makes it difficult to assess which components contribute significantly to final performance. We aim to make sense of the current design space of deep learning architectures for time series forecasting by discussing the design dimensions and trade-offs that can explain, often unexpected, observed results. This paper discusses the necessity of grounding model design on principles for forecasting groups of time series and how such principles can be applied to current models. In particular, we assess how concepts such as locality and globality apply to recent forecasting architectures. We show that accounting for these aspects can be more relevant for achieving accurate results than adopting specific sequence modeling layers and that simple, well-designed forecasting architectures can often match the state of the art. We discuss how overlooked implementation details in existing architectures (1) fundamentally change the class of the resulting forecasting method and (2) drastically affect the observed empirical results. Our results call for rethinking current faulty benchmarking practices and the need to focus on the foundational aspects of the forecasting problem when designing architectures. As a step in this direction, we propose an auxiliary forecasting model card, whose fields serve to characterize existing and new forecasting architectures based on key design choices.
+  bibtex: >
+    @misc{moretti2025mattersdeeplearningtime,
+          title={What Matters in Deep Learning for Time Series Forecasting?}, 
+          author={Valentina Moretti and Andrea Cini and Ivan Marisca and Cesare Alippi},
+          year={2025},
+          eprint={2512.22702},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2512.22702}, 
+    }
+- title: "Torch Geometric Pool: the Pytorch library for pooling in Graph Neural Networks"
+  links:
+    paper: https://arxiv.org/abs/2512.12642
+  venue: Preprint
+  short_venue: Preprint
+  year: 2025
+  thumbnail: 2512.12642.webp
+  authors:
+    - name: Filippo Maria
+      surname: Bianchi
+    - name: Carlo
+      surname: Abate
+    - me
+  keywords:
+    - graph neural networks
+    - graph pooling
+    - library
+  abstract: >
+    We introduce Torch Geometric Pool (tgp), a library for hierarchical pooling in Graph Neural Networks. Built upon Pytorch Geometric, Torch Geometric Pool (tgp) provides a wide variety of pooling operators, unified under a consistent API and a modular design. The library emphasizes usability and extensibility, and includes features like precomputed pooling, which significantly accelerate training for a class of operators. In this paper, we present tgp's structure and present an extensive benchmark. The latter showcases the library's features and systematically compares the performance of the implemented graph-pooling methods in different downstream tasks. The results, showing that the choice of the optimal pooling operator depends on tasks and data at hand, support the need for a library that enables fast prototyping.
+  bibtex: >
+    @misc{bianchi2025torchgeometricpoolpytorch,
+          title={Torch Geometric Pool: the Pytorch library for pooling in Graph Neural Networks}, 
+          author={Filippo Maria Bianchi and Carlo Abate and Ivan Marisca},
+          year={2025},
+          eprint={2512.12642},
+          archivePrefix={arXiv},
+          primaryClass={cs.LG},
+          url={https://arxiv.org/abs/2512.12642}, 
+    }
 - title: "Over-squashing in Spatiotemporal Graph Neural Networks"
   links:
     paper: https://arxiv.org/abs/2506.15507
